@@ -4,10 +4,10 @@ extra_css:
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
+    - toc.follow
     - toc.integrate
     - navigation.top
+    #- navigation.tabs
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -32,6 +32,20 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - admonition    
   - pymdownx.inlinehilite
+  - pymdownx.details
   - pymdownx.snippets
   - pymdownx.superfences
+nav:
+  - Managed Services: index.md
+  - Exchange: Exchange.md
+  - M365: M365.md
+  - Sharepoint: Sharepoint.md
+  - Teams: 
+    - Teams: Teams.md
+    - DeviceProvisioning: Teams/DeviceProvisioning.md
+    - Device Management: Teams/DeviceManagement.md
+    - More Things: 
+      - Also Things: Teams/MoreThings.md
+
