@@ -38,20 +38,24 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 plugins:
-  - search # necessary for search to work
+  - search: # necessary for search to work
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - glightbox
   - git-revision-date-localized:
       type: datetime
 nav:
-  - Managed Services: index.md
+  - Managed Services: ManagedServices.md
   - Exchange: 
     - General Information: Exchange.md
+    - eDiscovery:
+      - eDiscovery Litigation: Exchange/eDiscoveryLitigation.md
   - M365: 
     - General Information: M365.md
     - Licensing: M365/Licensing.md
   - Sharepoint: Sharepoint.md
   - Teams: 
     - General Information: Teams.md
-    - DeviceProvisioning: Teams/DeviceProvisioning.md
+    - Device Provisioning: Teams/DeviceProvisioning.md
     - Device Management: Teams/DeviceManagement.md
     - More Things: 
       - Also Things: Teams/MoreThings.md
