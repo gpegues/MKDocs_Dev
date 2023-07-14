@@ -5,9 +5,9 @@ theme:
   name: material
   features:
     - toc.follow
-    - toc.integrate
+   # - toc.integrate
     - navigation.top
-    #- navigation.tabs
+   # - navigation.tabs
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -37,13 +37,19 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.superfences
+plugins:
+  - search # necessary for search to work
+  - git-revision-date-localized
 nav:
   - Managed Services: index.md
-  - Exchange: Exchange.md
-  - M365: M365.md
+  - Exchange: 
+    - General Information: Exchange.md
+  - M365: 
+    - General Information: M365.md
+    - Licensing: M365/Licensing.md
   - Sharepoint: Sharepoint.md
   - Teams: 
-    - Teams: Teams.md
+    - General Information: Teams.md
     - DeviceProvisioning: Teams/DeviceProvisioning.md
     - Device Management: Teams/DeviceManagement.md
     - More Things: 
