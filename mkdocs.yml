@@ -44,11 +44,12 @@ plugins:
   - git-revision-date-localized:
       type: datetime
 nav:
-  - Managed Services: ManagedServices.md
+  - Managed Services: index.md
   - Exchange: 
     - General Information: Exchange.md
     - eDiscovery:
       - eDiscovery Litigation: Exchange/eDiscoveryLitigation.md
+      - Email Removal Requests: Exchange/mailremoval.md
   - M365: 
     - General Information: M365.md
     - Licensing: M365/Licensing.md
