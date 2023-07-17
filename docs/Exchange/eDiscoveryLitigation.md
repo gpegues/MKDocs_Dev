@@ -5,7 +5,7 @@
 | **EMPLOYEES RESPONSIBLE:** 	| All 	|
 | **TOOLS / APPLICATIONS:** 	| Service Now, Exchange Online, Microsoft Purvue (Compliance) 	|
 
-This document defines the process for dealing with eDiscovery in regard to Litigation Hold and Public Record requests. Please note, eDiscovery is not a backup solution and should NOT be used as one. 
+This document defines the process for dealing with eDiscovery in regard to Litigation Hold and Public Record requests. <span style="color:red">Please note, eDiscovery is not a backup solution and should NOT be used as one. </span>
 
 ## **Introduction**
 

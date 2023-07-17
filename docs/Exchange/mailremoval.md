@@ -73,7 +73,7 @@ There are multiple ways to create a content search, both via PowerShell and thro
 
 *Remove email with the following criteria*
 
-<span style="color:red">**Subject:** You must change your bank password</span>
+<span style="color:red">**Subject:** You must change your bank password now</span>
 
 <span style="color:red">**Sent:** 05/12/2020</span>
 
@@ -83,7 +83,7 @@ Using the `New-ComplianceSearch` cmdlet in PowerShell, the message properties li
     This creates a compliance search with the -Name provided being the name of the search for further interactions. `ContentMatchQuery` is the input for search parameters. 
 
     ```Powershell
-    New-ComplianceSearch -Name Phish1 -ExchangeLocation All -ContentMatchQuery 'subject:"You must change your bank password" AND sent:05/12/2020' 
+    New-ComplianceSearch -Name Phish1 -ExchangeLocation All -ContentMatchQuery 'subject:"You must change your bank password now" AND sent:05/12/2020' 
     ``` 
     This creates the search; however, it does not start it. To start the search continuing with the above example, you would use the following command supplied with the `-Name` you gave the search: 
 

@@ -50,6 +50,10 @@ nav:
     - eDiscovery:
       - eDiscovery Litigation: Exchange/eDiscoveryLitigation.md
       - Email Removal Requests: Exchange/mailremoval.md
+    - Mailboxes:
+      - Creating User Email: Exchange/RemoteEnableUser.md
+      - Message Trace: Exchange/MessageTrace.md
+      - SMTP to SharedMailbox: Exchange/scan2email.md
   - M365: 
     - General Information: M365.md
     - Licensing: M365/Licensing.md
