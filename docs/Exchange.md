@@ -18,6 +18,10 @@ RCRIVKMS1.rivcoca.org (KMS Server)
 
 Bulk Mail Solution: GovDelivery  
 
+## **Useful Information**
+
+-.ost file cap is 50gb
+
 ## **Useful Links**  
 
 |            Service           	|                    URL                    	|                             Comment(s)                             	|
