@@ -54,6 +54,8 @@ nav:
       - Creating User Email: Exchange/RemoteEnableUser.md
       - Message Trace: Exchange/MessageTrace.md
       - SMTP to SharedMailbox: Exchange/scan2email.md
+    - Server:
+      - Maintenance Mode: Exchange/Exchange 2016 server (Non-DAG Setup) maintenance mode.md
   - M365: 
     - General Information: M365.md
     - Licensing: M365/Licensing.md
