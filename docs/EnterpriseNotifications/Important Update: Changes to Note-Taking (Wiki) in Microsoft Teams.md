@@ -56,7 +56,6 @@ We understand that changes like this can impact how you work in Teams. We are he
 
 Thank you for your continued support and adaptability.
 
-Have a great day Riverside County!
 
 #### RCIT - Managed Services Team
-M365 Services Team
+M365 Services Group
