@@ -39,7 +39,7 @@ We understand that changes like this can impact how you work in Teams. We are he
 
 Thank you for your continued support and adaptability.
 
-Best regards,
+Have a great day!
 
-RCIT - Managed Services Team
-M365/Messaging Group
+#### RCIT - Managed Services Team
+M365 Services Team
