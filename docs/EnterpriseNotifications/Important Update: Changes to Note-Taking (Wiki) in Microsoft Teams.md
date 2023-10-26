@@ -4,13 +4,12 @@
 
 To all agencies within Riverside County,
 
-This is a notification to inform you of an upcoming change in Microsoft Teams that will enhance your note-taking experience. As per Microsoft's announcement (MC496248, January 2023), a new **"Notes"** tab, powered by OneNote, will replace the current Wiki functionality in Teams.
+This is a notification to inform you of an upcoming change in Microsoft Teams that will enhance your note-taking experience. A new **"Notes"** tab, powered by OneNote, will replace the current Wiki functionality in Teams.
 
 #### **Key Details**
 
 - **Rollout Start:** Mid-November 2023
 - **Rollout Completion:** Late November 2023
-- **Associated Roadmap ID:** Microsoft 365 Roadmap ID 180484
 
 #### **What This Change Means for You**
 
