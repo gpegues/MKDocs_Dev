@@ -42,7 +42,7 @@ Microsoft is implementing these changes over the next several months in stages. 
 
 **Rollout Completion:** Late November 2023
 
-- **Stage 1:** Rolled out (October 2023/November 2023 for GCC, GCCH, and DoD)
+- **Stage 1:** Initial Roll out (October 2023/November 2023 for GCC, GCCH, and DoD)
 Users won't be able to create new wikis, but they will be able to access—that is, read and write for—their existing wikis. Users can also export their content to OneNote. Once a user has done so, the Wiki version will be read-only.
 After exporting, each wiki in a channel will appear as a separate section in OneNote, and each wiki page will be a separate OneNote page.  
 
