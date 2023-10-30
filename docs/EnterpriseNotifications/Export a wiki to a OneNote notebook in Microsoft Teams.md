@@ -13,7 +13,6 @@ Teams is phasing out Wiki support. You can continue to access and edit existing 
 
 ## In this article
 
-- [Enable OneNote](#enable-onenote)
 - [Export a wiki to OneNote](#export-a-wiki-to-onenote)
 - [Collaborate in a Teams channel OneNote](#collaborate-in-a-teams-channel-onenote)
 - [Add a previously removed Notes tab](#add-a-previously-removed-notes-tab)
@@ -21,10 +20,6 @@ Teams is phasing out Wiki support. You can continue to access and edit existing 
 - [Connect to an existing notebook, section, or page](#connect-to-an-existing-notebook-section-or-page)
 - [Access a wiki in SharePoint](#access-a-wiki-in-sharepoint)
 - [Wiki deprecation FAQ](#wiki-deprecation-faq)
-
-### Enable OneNote
-
-For information about how to enable OneNote, see [Deployment guide for OneNote](https://example.com/deployment-guide). If your channel used to have a Notes tab, you can restore that tab by following the steps [here](https://example.com/restore-notes-tab).
 
 ### Export a Wiki to OneNote
 
@@ -39,13 +34,15 @@ This option is only available for standard channels.
 
 After exporting, you can go to the Notes tab to collaborate using OneNote in your Teams channel. A read-only version of your wiki will continue to be available in the Wiki tab for now.
 
+![alt text](https://support.content.office.net/en-us/media/fef0e2c2-d2b0-4025-9c0c-ea4c5bdd49c7.gif)
+
 ### Collaborate in a Teams Channel OneNote
 
 This option is only available for standard channels.
 
 1. In Teams, go to whatever channel has the notebook you want to access.
-2. Go to the Notes tab and select the **Show navigation** ![alt text](https://support.content.office.net/en-us/media/fef0e2c2-d2b0-4025-9c0c-ea4c5bdd49c7.gif).
-3. Create a new section and give it the same name as the Teams channel. ![OneNote channel section](https://example.com/onenote-channel-section)
+2. Go to the Notes tab and select the **Show navigation**
+3. Create a new section and give it the same name as the Teams channel. ![#collaborate-in-a-teams-channel-onenote](https://support.content.office.net/en-us/media/1d1f7551-368c-467b-9964-7c4cd6957d2d.png)
 4. In the section, create a page, name it, and start taking notes.
 5. To add more pages to the channel section, go to the notebook navigation pane ![Navigation OneNote](https://example.com/navigation-onenote) and select **Add page**. ![OneNote add page](https://example.com/onenote-add-page)
 
