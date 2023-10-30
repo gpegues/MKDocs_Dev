@@ -51,7 +51,7 @@ This option is only available for standard channels.
 If your standard channel used to have a Notes tab, you can add it back.
 
 1. In Teams, go to the channel you want to give OneNote functionality again.
-2. In the tabs bar across the top, select **Add a tab** ![Add button](https://example.com/add-button). The **Add a tab** window will open.
+2. In the tabs bar across the top, select **Add a tab** ![Add button](https://support.content.office.net/en-us/media/8410fdac-0d94-46b0-84cb-a944c53e455e.png). The **Add a tab** window will open.
 3. Select the OneNote tile. The OneNote window will open.
 4. Select the default notebook for your team, then select **Save**. Alternatively, you can expand the default team notebook and select a specific section or page to add back.
 
@@ -63,8 +63,7 @@ Optionally, you can rename an existing tab to repurpose it for OneNote in a stan
 
 1. In Teams, go to the channel for which you want to use OneNote.
 2. In the tabs bar across the top, right-click the tab you want to rename.
-3. Select **Rename** to open the Rename dialog.
-4. ![OneNote rename tab](https://example.com/onenote-rename-tab)
+3. Select **Rename** to open the Rename dialog. ![OneNote rename tab](https://support.content.office.net/en-us/media/2d0a9eb5-fd05-4d4c-9591-bc57009200e9.png)
 5. Type a new name for the tab and select **Save**.
 
 ### Connect to an Existing Notebook, Section, or Page
@@ -72,9 +71,9 @@ Optionally, you can rename an existing tab to repurpose it for OneNote in a stan
 You can connect to an existing notebook, section, or page in a standard channel.
 
 1. In Teams, go to the channel to which you want to connect an existing notebook, section, or page.
-2. In the tabs bar across the top, select **Add a tab** ![Add button](https://example.com/add-button). The **Add a tab** window will open.
+2. In the tabs bar across the top, select **Add a tab** ![Add button](https://support.content.office.net/en-us/media/8410fdac-0d94-46b0-84cb-a944c53e455e.png). The **Add a tab** window will open.
 3. Select the OneNote tile. The OneNote window will appear.
-4. Select **Paste a OneNote link**. ![OneNote paste a OneNote link](https://example.com/onenote-paste-link)
+4. Select **Paste a OneNote link**. ![OneNote paste a OneNote link](https://support.content.office.net/en-us/media/d41a0f37-23d4-4c7d-b729-7e778b1ac6a2.png)
 5. In the URL box, paste the link to your notebook, section, or page, and select **Save**.
 
 ### Access a Wiki in SharePoint
