@@ -41,10 +41,10 @@ After exporting, you can go to the Notes tab to collaborate using OneNote in you
 This option is only available for standard channels.
 
 1. In Teams, go to whatever channel has the notebook you want to access.
-2. Go to the Notes tab and select the **Show navigation**
-3. Create a new section and give it the same name as the Teams channel. ![#collaborate-in-a-teams-channel-onenote](https://support.content.office.net/en-us/media/1d1f7551-368c-467b-9964-7c4cd6957d2d.png)
-4. In the section, create a page, name it, and start taking notes.
-5. To add more pages to the channel section, go to the notebook navigation pane ![Navigation OneNote](https://example.com/navigation-onenote) and select **Add page**. ![OneNote add page](https://example.com/onenote-add-page)
+2. Go to the **Notes Tab** and select the **Show Navigation**
+3. Create a new section and give it the same name as the Teams channel.![#collaborate-in-a-teams-channel-onenote](https://support.content.office.net/en-us/media/1d1f7551-368c-467b-9964-7c4cd6957d2d.png)
+5. In the section, create a page, name it, and start taking notes.
+6. To add more pages to the channel section, go to the notebook navigation pane ![Navigation OneNote](https://support.content.office.net/en-us/media/134aaf3f-3409-4b5c-a28c-c5de86e19076.png) and select **Add page**. ![OneNote add page](https://support.content.office.net/en-us/media/25f894f2-2170-47b6-9885-282042a50982.png)
 
 ### Add a Previously Removed Notes Tab
 
