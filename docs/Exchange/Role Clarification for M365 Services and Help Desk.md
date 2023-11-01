@@ -62,9 +62,8 @@ The M365 Administrator oversees the organization's entire Microsoft 365 suite, e
 The Help Desk provides first-line support for both on-premises Exchange, Exchange Online, and M365 services. Responsibilities include:
 
 ### 1. **User Account Management:**
-   - Managing user accounts for Exchange, including creating, modifying, and deleting mailboxes.
-   - Assisting with account management tasks for M365 services.
-
+   - Managing user accounts for M365 and Exchange, including creating, modifying, and maintaining user accounts.
+   
 ### 2. **Basic Troubleshooting:**
    - Assisting users with setup and configuration for Exchange (e.g., Outlook) and M365 services.
    - Resolving common connectivity and accessibility issues.
