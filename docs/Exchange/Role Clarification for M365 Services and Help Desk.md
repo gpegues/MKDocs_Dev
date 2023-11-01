@@ -1,4 +1,4 @@
-# Internal M365/Messaging Team Document: Role Clarification for M365 Services and Help Desk
+# M365 Services Responsibilities: Role Clarification for M365 Services and Help Desk
 
 ## Purpose
 
