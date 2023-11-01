@@ -1,4 +1,4 @@
-# Internal M365/Messaging Team Document: Role Clarification for Exchange Administrator and Help Desk
+# Internal M365/Messaging Team Document: Role Clarification for M365 Services and Help Desk
 
 ## Purpose
 
