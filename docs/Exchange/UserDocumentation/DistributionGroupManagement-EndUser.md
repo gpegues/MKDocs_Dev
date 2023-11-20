@@ -7,7 +7,6 @@ This document walks you through navigating to the Distribution Groups area, view
 - [To View Members of a List](#to-view-members-of-a-list)
 - [To Add Members to a Distribution List That You Own](#to-add-members-to-a-distribution-list-that-you-own)
 - [To Remove Members from a Distribution List That You Own](#to-remove-members-from-a-distribution-list-that-you-own)
-- [Get Help](#get-help)
 
 ### To View Members of a List
 
