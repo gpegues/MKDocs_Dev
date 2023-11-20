@@ -10,12 +10,12 @@ This document walks you through navigating to the Distribution Groups area, view
 
 ### To View Members of a List
 
-1. Sign into Office 365 using a web browser. https://outlook.office365.com/ecp/MyGroups/PersonalGroups.aspx
+1. Sign into Office 365 using a web browser. 
 2. From the app navigation waffle in the upper-left corner, select the Outlook app, if you are not already there.
 3. On the Outlook ribbon, click on the Settings wheel button.
 4. In the left navigation pane of the Settings page, click to expand the General selection list.
 5. From the General list, select Distribution Groups.
-6. In the text field, click the link that displaying "To manage distribution groups, visit this portal". As an alternative, you can skip prior steps by manually navigating to the following URL: https://outlook.office365.com/mail/options/general/distributionGroups  
+6. In the text field, click the link that displaying "To manage distribution groups, visit this portal".
 7. In the "Distribution groups I own" section, select the distribution group you want to modify from the list and click the pencil icon. Please note, if the distribution list that you want to modify is not listed, you may not be the list owner or the list may be hidden.
 8. On the Distribution Group window that opens, select membership from the left menu to view members of the list.
 
