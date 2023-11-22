@@ -3,6 +3,8 @@ extra_css:
   - stylesheets/extra.css
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
   features:
     - toc.follow
    # - toc.integrate
@@ -37,6 +39,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.superfences
+repo_url: https://github.com/orgs/rivcoit/teams/rcit-tsb-m365/repositories
 plugins:
   - search: # necessary for search to work
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
