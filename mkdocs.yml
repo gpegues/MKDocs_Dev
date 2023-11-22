@@ -46,8 +46,8 @@ plugins:
 nav:
   - Managed Services: index.md
   - Enterprise Notifications:
-    - Export a Wiki to OneNote: EnterpriseNotifications\Export a wiki to a OneNote notebook in Microsoft Teams.md
-    - Wiki Changes: EnterpriseNotifications\Important Update Changes to Note-Taking (Wiki) in Microsoft Teams.md
+    - Export a Wiki to OneNote: EnterpriseNotifications/Export a wiki to a OneNote notebook in Microsoft Teams.md
+    - Wiki Changes: EnterpriseNotifications/Important Update Changes to Note-Taking (Wiki) in Microsoft Teams.md
   - Exchange: 
     - General Information: Exchange.md
     - eDiscovery:
@@ -58,14 +58,14 @@ nav:
       - Message Trace: Exchange/MessageTrace.md
       - SMTP to SharedMailbox: Exchange/scan2email.md
     - Misc.:
-      - Help Desk Support: Exchange\Help Desk Support for Outlook.md
-      - Role Clarification: Exchange\Role Clarification for M365 Services and Help Desk.md
+      - Help Desk Support: Exchange/Help Desk Support for Outlook.md
+      - Role Clarification: Exchange/Role Clarification for M365 Services and Help Desk.md
     - Server:
       - Edge Subscription: Exchange/Server 2016/Create New Edge Subscription.md
       - Maintenance Mode: Exchange/Exchange 2016 server (Non-DAG Setup) maintenance mode.md
     - User Documentation:
-      - Distribution Group Management: Exchange\UserDocumentation\DistributionGroupManagement-EndUser.md
-      - Updating Auto-Reply: Exchange\UserDocumentation\Updating Auto-Reply in a Shared Mailbox via OWA (Outlook Web Access).md
+      - Distribution Group Management: Exchange/UserDocumentation/DistributionGroupManagement-EndUser.md
+      - Updating Auto-Reply: Exchange/UserDocumentation/Updating Auto-Reply in a Shared Mailbox via OWA (Outlook Web Access).md
   - M365: 
     - General Information: M365.md
     - Licensing: M365/Licensing.md
