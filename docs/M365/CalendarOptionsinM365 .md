@@ -1,6 +1,6 @@
 # Calendar Options in Microsoft 365: Pros and Cons
 
-## Outlook Calendar
+## Outlook Calendar (Exchange Online)
 ### Pros
 - **Familiarity:** Widely used and familiar to most users.
 - **Integration with Email:** Direct link with email for invites and updates.
