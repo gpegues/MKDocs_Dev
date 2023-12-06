@@ -1,4 +1,4 @@
-# ServiceNow Request Submission Guidelines for Microsoft 365 Exchange Online Resource Access
+# ServiceNow Request Submission Guidelines for Microsoft 365: Exchange Online Resource Access
 
 ## Introduction
 This document provides detailed guidelines for submitting requests in ServiceNow for gaining access to various Microsoft 365 Exchange Online resources, including Distribution Groups, Dynamic Distribution Groups, Mail-Enabled Security Groups, and Microsoft 365 Groups. Adherence to these guidelines ensures efficient processing and accurate assignment of access.
