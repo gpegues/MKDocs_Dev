@@ -55,7 +55,7 @@ This document provides detailed guidelines for submitting requests in ServiceNow
 
 ### Instances Requiring Resubmission
 - Submissions with attached user lists or text area lists instead of the provided submission fields.
-- Incomplete, incorrect, or ambigous requests. 
+- Incomplete, incorrect, or ambiguous requests. 
 
 ### Importance of Adherence
 - Ensures accurate and efficient processing of access requests.
