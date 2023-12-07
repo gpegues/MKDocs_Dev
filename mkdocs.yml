@@ -67,11 +67,16 @@ nav:
       - Edge Subscription: Exchange/Server 2016/Create New Edge Subscription.md
       - Maintenance Mode: Exchange/Exchange 2016 server (Non-DAG Setup) maintenance mode.md
     - User Documentation:
-      - Distribution Group Management: Exchange/UserDocumentation/DistributionGroupManagement-EndUser.md
-      - Updating Auto-Reply: Exchange/UserDocumentation/Updating Auto-Reply in a Shared Mailbox via OWA (Outlook Web Access).md
+      - Distribution Group Management: Exchange/UserDocumentation/M365-ExchangeOnline Distribution Group Management (EndUser).md
+      - Distribution Group Types: Exchange/UserDocumentation/M365-ExchangeOnline Distribution Group Types.md
+      - ServiceNow Request Guidelines: Exchange/UserDocumentation/M365-ExchangeOnline ServiceNow Request Submission Guidelines for Microsoft 365 Exchange Online Resource Access.md
+      - Updating Auto-Reply: Exchange/UserDocumentation/M365-ExchangeOnline Autoreply for Shared Mailboxes.md
   - M365: 
     - General Information: M365.md
+    - Bots: M365/Framework-BotApproval-M365.md
     - Licensing: M365/Licensing.md
+    - Misc:
+      - Calendar Options: M365/CalendarOptionsinM365.md
   - Sharepoint: Sharepoint.md
   - Teams: 
     - General Information: Teams.md
