@@ -21,13 +21,13 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to Light mode
-      primary: cyan
-      accent: deep orange
+      primary: black
+      accent: light blue
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to Dark mode
-      primary: cyan
+      primary: black
       accent: deep orange
 markdown_extensions:
   - pymdownx.highlight:
@@ -86,4 +86,10 @@ nav:
       - Unblock Users: Teams/Troubleshooting/UnblockUser.md
     - More Things: 
       - Also Things: Teams/MoreThings.md
-
+  - Web Server Support:
+    - General Information: WebServerSupport.md
+    - Servers:
+      - FTP: WebServerSupport/FTP.md
+      - IIS: 
+        - RIVCO:
+          - RCIT-16WEB01: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01.md
