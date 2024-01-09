@@ -77,6 +77,8 @@ nav:
     - Licensing: M365/Licensing.md
     - Misc:
       - Calendar Options: M365/CalendarOptionsinM365.md
+  - Misc:
+    - Syncs: Misc/Syncs.md
   - Sharepoint: Sharepoint.md
   - Teams: 
     - General Information: Teams.md
