@@ -13,7 +13,7 @@ Objective: Transition endpoint devices from Microsoft Teams Classic Build to Mic
   
   - Review Modern Teams client compatibility items for endpoint devices
   - Identify potential challenges and solutions
-  - Identify pilot users within RCIT
+  - All RCIT users will be included in pilot phase
 
 - **Responsibilities**
   
