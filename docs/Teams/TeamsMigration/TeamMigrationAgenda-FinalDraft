@@ -7,7 +7,7 @@ All clients who have not upgraded to the modern build, will need to do so prior 
 The intent of this meeting is to inform all parties of our intent to transition endpoint devices from Microsoft Teams Classic Build to Microsoft Teams Modern Build prior to March 31st, 2024.
 
 ## Introduction - [Microsoft Teams Classic Client End of Availability](https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability)
-- **Overview of Rollout Plan**
+- **Overview of Rollout Plan** (10 Minutes)
   - Explanation of the required change
   - Explanation of support roles and responsibilities within RCIT groups
   - Timeline: Dates of importance
@@ -16,8 +16,8 @@ The intent of this meeting is to inform all parties of our intent to transition 
     - On March 31 2024, Microsoft will attempt to uninstall Classic Teams, and install the new modern Teams client (for users who still using classic Teams). Classic Teams will no longer function from this date forward
     - After March 31 2024, if you’re already running on new Teams, there will be no change in behavior. Your Teams will continue working as expected. Users on classic Teams will be automatically updated to the new Teams client. Users won’t be able to switch back to classic Teams after this date, because classic Teams won’t be functional. Microsoft will attempt to uninstall classic Teams.
 
-## System Administrators
-- **Preparation and Planning**
+## System Administrators 
+- **Preparation and Planning** (10 Minutes)
   
   - Review Modern Teams client compatibility items for endpoint devices
   - Identify potential challenges and solutions
@@ -32,9 +32,9 @@ The intent of this meeting is to inform all parties of our intent to transition 
 - **Training and Documentation**
 
   - Providing vendor documentation on product changes (M365 Services Team)
-  - Provide Teams client deployment troubleshooting information related to Intune/Configuration Manager deployments (Client Management Team)
+  - Provide Teams client deployment troubleshooting information for Intune/Configuration Manager related deployments (Client Management Team)
  
-## Client Management Team
+## Client Management Team (10 Minutes)
 
 - **Support Readiness**
 
@@ -48,7 +48,7 @@ The intent of this meeting is to inform all parties of our intent to transition 
   - Provide updated guidance to Help Desk and Field Services on any changes to endpoint installion process for Microsoft Teams (Configuration Manager/Intune)
   - Collaborate with M365 Services team
  
-## M365 Services Team
+## M365 Services Team (5 Minutes)
 
 - **Support Readiness**
   - Provide technical information for assigned tasks to other RCIT Teams
@@ -58,7 +58,7 @@ The intent of this meeting is to inform all parties of our intent to transition 
   - Implement Teams Administrative settings to allow for in-place upgrades
   - Enforce Modern Teams compliance through Teams administrative policy
 
-## Help Desk
+## Help Desk (10 Minutes)
 
 - **Support Readiness**
   - Familiarizing with common issues and resolutions in Modern Teams Client
@@ -70,16 +70,16 @@ The intent of this meeting is to inform all parties of our intent to transition 
   - Escalating complex issues to M365 Services for Teams client policy issues
   - Documentation of related issues within Service Now.
 
-## End Users
+## End Users (5 Minutes)
 
 - **Support Readiness**
-  - Provide information for Rivco staff to assist with understanding the reason for the transition
+  - Provide information for Rivco staff to provide reason for the transition
 
 - **Responsibilities**
   - Updating personal devices as required (Selection of the "Try the new Teams" option)
   - Participate in training (if needed) for Modern Teams functionality changes
   
-## Closing Session
+## Closing Session (20 Minutes)
 
 - **Review and Recap**
   - Recap current rollout process and update channels
