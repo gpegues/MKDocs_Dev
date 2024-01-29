@@ -1,4 +1,4 @@
-# Microsoft Teams Classic to Modern Rollout Agenda
+# Microsoft Teams Classic to Modern Update Agenda
 
 ## Summary
 Microsoft Teams Classic Client is approaching product end of life. 
@@ -28,11 +28,6 @@ The intent of this meeting is to inform all parties of our intent to transition 
   - Deploy Modern Microsoft Teams installer via Intune (Client Management Team)
   - Update Intune/Configuration Manager deployment items to deploy Modern Teams during device provisioning (Client Management Team)
   - Managing and enabling compliance settlings via Teams administrative portal (M365 Services Team)
-
-- **Training and Documentation**
-
-  - Providing vendor documentation on product changes (M365 Services Team)
-  - Provide Teams client deployment troubleshooting information for Intune/Configuration Manager related deployments (Client Management Team)
  
 ## Client Management Team (10 Minutes)
 
@@ -40,12 +35,12 @@ The intent of this meeting is to inform all parties of our intent to transition 
 
   - Ensure endpoint devices are compatible with Modern Teams client
   - Coordinate software deployments to device collections
-  - Update any required device provisioning processes (Imaging, etc.) 
+  - Update any required device provisioning processes (Imaging, Intune Policy, etc.) 
 
 - **Responsibilities**
   - Communicate Intune deployment information to end users receiving update via Intune instead of in-place upgrade.
   - Provide support for device-related installation inquiries during the transition
-  - Provide updated guidance to Help Desk and Field Services on any changes to endpoint installion process for Microsoft Teams (Configuration Manager/Intune)
+  - Provide updated guidance to Help Desk and Field Services on any changes to endpoint installion process for Microsoft Teams (Configuration Manager/Intune), if needed.
   - Collaborate with M365 Services team
  
 ## M365 Services Team (5 Minutes)
