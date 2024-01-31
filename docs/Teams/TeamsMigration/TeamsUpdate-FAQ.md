@@ -22,9 +22,9 @@ If you fall under the June 30, 2024 list items and you aren’t able to be updat
 ## Admin Experience
 
 ### What Admins Will See Until March 31, 2024
-Admins have full control over their tenant’s transition to new Teams via the Upgrade to the new Teams using policies article.
+Admins have full control over their tenant’s transition to new Teams via the Upgrade to the new Teams. For more detailed information, please refer to Microsoft's [new teams deploy using policie](https://learn.microsoft.com/en-us/microsoftteams/new-teams-deploy-using-policies?tabs=teams-admin-center#prerequisites) documentation.
 
-A bulk installer, including offline capability, is provided for admins who want to deploy new Teams using their own tools and process and use Teams policies to move their users to the desired experience: Bulk upgrade to the new Microsoft Teams client.
+A bulk installer, including offline capability, is provided for admins who want to deploy new Teams using their own tools and process and use Teams policies to move their users to the desired experience: [Bulk upgrade to the new Microsoft Teams client](https://learn.microsoft.com/en-us/microsoftteams/new-teams-bulk-install-client).
 
 Microsoft highly recommends that admins who want more control or a more gradual rollout of new Teams take advantage of these tools and functionality to begin slowly transitioning their users to new Teams now. Policies can be targeted to individual users, groups of users, or your entire tenant to give you flexibility to release to users group by group while monitoring progress and feedback.
 
@@ -36,23 +36,33 @@ After these options are removed, Microsoft will begin moving all users except VD
 ## Frequently Asked Questions
 
 ### Users
-- If a user has both clients installed: Only new Teams will work after March 31, 2024, and we'll attempt to uninstall the classic Teams client.
-- If only the new Teams client is installed: There won’t be any difference.
+- Can a user have both clients installed?
+  - Yes. However, only the new Teams client will work after March 31, 2024.
+- If I have the new Teams client installed prior to March 31, 2024, : There won’t be any difference.
 - If a user can’t install the new Teams client due to a reason outlined in the table above, such as unsupported OS (including Win 10 LTSC): These users will be allowed to use classic Teams until June 30, 2024 (as per above schedule) to allow for updating operating system to modifying permissions etc. After June 30, 2024, classic Teams won't work.
 
 ### Admins
-- The system requirements for the new Teams client: [Prerequisites](https://learn.microsoft.com/en-us/microsoftteams/new-teams-deploy-using-policies?tabs=teams-admin-center)
-- When will admins see the new Teams Only policy in their tenant: Upgrade to the new Teams using policies
-- What will happen with the update policies: The update policies may still appear, but they won’t be functional after March 31, 2024.
-- When will classic Teams client stop being installed with M365 apps: This will stop happening on March 31, 2024.
-- Can I stop the classic Teams client from being uninstalled and what happens if a policy is set to prevent app uninstallation: Yes, you can stop the classic Teams client from being uninstalled. If your configuration prevents uninstall, Microsoft won't attempt the uninstall again. You'll need to uninstall classic Teams after that point.
-- Do I need to remove the old client: Microsoft recommends that you remove the classic Teams client once a user has fully transitioned to new Teams. It's security best practice to not leave software that is no longer operational installed on a machine. Microsoft will attempt to remove the classic Teams client on your behalf, but if this is blocked or prevented by your configuration or policies it is your responsibility to conduct this removal yourself.
-- What can I do if users still need classic Teams: You won’t be able to use classic Teams after March 31, 2024, or June 30, 2024 if you meet the conditions in the table at the start of the article. Until that date you'll still have a banner announcing the end of classic Teams at the top of your client. Please reference this page for more information: Features that are changing in the new Microsoft Teams
-- Are there any scripts available if the admin needs to bulk uninstall classic Teams: Check out our uninstallation documentation.
+- What are the system requirements for the new Teams client?
+  - Please see the following Microsoft Documentation: [Prerequisites](https://learn.microsoft.com/en-us/microsoftteams/new-teams-deploy-using-policies?tabs=teams-admin-center)
+- What will happen with Teams administrative update policies?
+  - The update policies may still appear, but they won’t be functional after March 31, 2024.
+- When will classic Teams client stop being installed with M365 apps?
+  - This will stop happening on March 31, 2024.
+- Do we need to remove the old client and/or also "Teams-Wide Installer" from legacy deployments?
+  - Yes. Microsoft recommends that you remove the classic Teams client once a user has fully transitioned to new Teams. It's security best practice to not leave software that is no longer operational installed on a machine. Microsoft will attempt to remove the classic Teams client on our behalf, but if this is blocked or prevented by your configuration or policies it will become our responsibility to conduct this removal ourselves.
+- What can be done if users still need classic Teams due to a no longer supported feature?
+  - Unfortuantely, the level of change happening is not one within control of RCIT, and is a Microsoft level change. You will not be able to use Classic Teams after March 31, 2024, or June 30, 2024 if you meet [specific conditions](https://learn.microsoft.com/en-us/microsoftteams/new-teams-automatic-upgrade-announced). Until that date you'll still have a banner announcing the end of classic Teams at the top of your client. Please reference this page for more information: Features that are changing in the new Microsoft Teams
 
 ### Client
-- Will classic Teams be removed automatically: Microsoft will attempt to uninstall classic Teams after March 31, 2024. If this fails, admins must uninstall classic Teams for their users.
-- When or how will it be removed, and what triggers the uninstall: This will happen after March 31, 2024. As each user receives the automatic update and switches to new Teams, an attempt will be made to uninstall classic Teams.
+- Will classic Teams be removed automatically?
+  - Microsoft will attempt to uninstall classic Teams after March 31, 2024. If this fails, IT organizations must uninstall classic Teams for their users.
+- When or how will it be removed, and what triggers the uninstall?
+  - This will happen after March 31, 2024. As each user receives the automatic update and switches to new Teams, an attempt will be made to uninstall classic Teams.
+- Are User settings migrated as part of the upgrade?
+  - Yes, however settings can only be only migrated once during the first time a user updates to new Teams. After that, no incremental migrations of setting changes will occur if the user switches back and forth between classic and new.
+  - For a list of items which are migrated, please refer to the following link for a detailed table of items: [User Settings Migration](https://learn.microsoft.com/en-us/microsoftteams/new-teams-deploy-using-policies?tabs=teams-admin-center#prerequisites)
+
+Teams.  
 - Will classic Teams be removed for all users on the device: Yes.
 - Will both Windows and Mac support uninstallation: Yes.
 - What if I need to use classic Teams after March 31, 2024: You won’t be able to use classic Teams after March 31, 2024, or June 30, 2024 if you meet the conditions in the table at the start of the article. Until that date you'll still have a banner announcing the end of classic Teams at the top of your client. Please reference this page for more information: Features that are changing in the new Microsoft Teams
