@@ -75,7 +75,9 @@ nav:
   - M365: 
     - General Information: M365.md
     - Bots: M365/Framework-BotApproval-M365.md
-    - Licensing: M365/Licensing.md
+    - Licensing: 
+      - General Information: M365/Licensing.md
+      - Licensing Groups: M365/LicenseGroups.md 
     - Misc:
       - Calendar Options: M365/CalendarOptionsinM365.md
   - Misc:
