@@ -21,6 +21,7 @@ Below is a list of the current Azure Licensing Groups and their descriptions.
 |License_PowerApps_Premium|1e896204-4339-4a34-b248-4a40baa62554|Users in this group will be assigned a PowerApps Premium license|
 |License_PowerBiPro|6dbb1beb-2bdc-4e5d-973a-3d4a5562dcc5||
 |License_ProjectPlan3|0449a59e-c81a-4ca9-b8e9-583e84c0d164|Members of this group will be licensed for "Project Plan 3 for GCC"|
+|License_TeamsPremium|06e80aea-9949-4197-a375-b765e49ccfde|Group for Teams Premium license assignment|
 |License_TeamsRooms|65612394-9b8c-40ee-b231-c33b0acaf16b|Accounts in this group will automatically be licensed for Microsoft Teams Rooms|
 |License_VisioPlan1|63ca32a9-58fd-42fc-abc0-3f894c627ea1|Members of this group will be assigned a license for Visio Plan 1|
 |License_VisioPlan2|6871aeb1-a78a-4a2d-9a64-69f9de205dc1|Members of this group will be granted a license for Visio Plan 2|

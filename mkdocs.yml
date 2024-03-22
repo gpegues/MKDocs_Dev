@@ -87,10 +87,10 @@ nav:
     - General Information: Teams.md
     - Device Provisioning: Teams/DeviceProvisioning.md
     - Device Management: Teams/DeviceManagement.md
+    - Policies:
+      - Recording: Teams/Policies/Recording.md
     - Troubleshooting:
       - Unblock Users: Teams/Troubleshooting/UnblockUser.md
-    - More Things: 
-      - Also Things: Teams/MoreThings.md
   - Web Server Support:
     - General Information: WebServerSupport.md
     - Servers:
