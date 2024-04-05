@@ -15,6 +15,8 @@ Below is a list of the current Azure Licensing Groups and their descriptions.
 |License_M365_PowerApps|ac51582f-0e41-4c4c-a4ca-b4c2095ec828|Users in this group will be assigned the POWERAPPS_O365_P2_GOV service plan from an M365 License|
 |License_M365_PowerApps_DCSS|e87a91e9-a37a-40f2-813a-fd81b2a2b88f|License DCSS users for Power Apps|
 |License_M365_PowerAutomate|5d29f756-584d-4651-af8b-1f20e673a8b8|Users in this group will be assigned the FLOW_O365_P2_GOV service plan from a M365 License|
+|License_M365_PowerAutomateFree|441a86e7-372b-4311-bb0a-f0b9f974d556|Assigned Microsoft Power Automate Free Licensing|
+|License_M365_PowerAutomatePerUserGov|559e81ec-b00d-41b5-a233-13e63bf1314a||
 |License_M365_Stream|716e3156-3e69-4333-9c8a-a76cc77b3157|Users in this group will be assigned the STREAM_O365_E3_GOV service plan from a M365 License|
 |License_M365_Stream_DPSS|148597ab-ef2a-48d7-a583-6d7979ad6506|DPSS Users in this group will be assigned the STREAM_O365_E3_GOV service plan from a M365 License|
 |License_M365_Stream_RCIT_UST|d463e0c3-e14a-4f9f-937a-5feab00623cf||
