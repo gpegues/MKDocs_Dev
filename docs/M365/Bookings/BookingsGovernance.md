@@ -14,7 +14,7 @@ This plan applies to all consolidated Riverside County employees and departments
 ## 4. Policies and Procedures
 - **Data Privacy:** All data stored in Microsoft Bookings must comply with Riverside County data privacy policies and relevant regulations.
 - **Security:** Users must follow Riverside County security protocols when using Bookings, including the protection of sensitive information.
-- **Access Control:** Access to Microsoft Bookings will be granted based on M365 licensed user accounts. RCIT will tenant level permissions within the platform.
+- **Access Control:** Access to Microsoft Bookings will be granted based on M365 licensed user accounts. RCIT will manage tenant level permissions within the platform.
 - **Training:** All users of Microsoft Bookings should receive training on its proper use though CORLearning, including scheduling, managing appointments, and privacy settings.
 - **Compliance:** Users must ensure that their use of Microsoft Bookings complies with all applicable public sector and local laws. Please refer to the "__Riverside County Information Security Standard__" publication provided from our __Information Security Office__ for additional information.
 - **Third-Party Plugins:** Use of third-party plugins in combination with Microsoft Bookings is not supported. RCIT is not responsible for support or any negative or unexpected events resulting from their usage.
