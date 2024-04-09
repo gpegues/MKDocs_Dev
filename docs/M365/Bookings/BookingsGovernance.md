@@ -31,7 +31,7 @@ RCIT will regularly review the use of Microsoft Bookings to ensure compliance wi
 | Full Example  | Combined with a dot separator | HWS.JohnSmith.Bookings |
 
 ## 7. Policy Enforcement
-Enforcement will be performed through policy through M365 tenant policy. 
+Enforcement will be performed through M365 tenant policy. 
 
 Below are the policies implemented and maintained by RCIT-M365 Services Team:
 
