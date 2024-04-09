@@ -7,7 +7,7 @@ This governance plan outlines the policies and procedures for the use of Microso
 This plan applies to all consolidated Riverside County employees and departments, that utilize Microsoft Bookings for scheduling appointments and managing calendars.
 
 ## 3. Roles and Responsibilities
-- **RCIT:** Responsible for the configuration and maintenance of Microsoft Bookings.
+- **RCIT:** Responsible for the configuration and maintenance of Microsoft Bookings in alignment with cloud policy.
 - **Department Heads:** Ensure that their teams are trained on the proper use of Bookings and adhere to the governance plan.
 - **Users:** Comply with the policies and procedures outlined in this governance plan when using Microsoft Bookings.
 
