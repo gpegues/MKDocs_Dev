@@ -20,7 +20,7 @@ This plan applies to all consolidated Riverside County employees and departments
 - **Third-Party Plugins:** Use of third-party plugins in combination with Microsoft Bookings is not supported. RCIT is not responsible for support or any negative or unexpected events resulting from their usage.
 
 ## 5. Monitoring and Review
-The IT Department will regularly review the use of Microsoft Bookings to ensure compliance with this governance plan. The plan will be reviewed annually or as needed to adapt to changes in organizational policies or regulations. 
+RCIT will regularly review the use of Microsoft Bookings to ensure compliance with this governance plan. The plan will be reviewed annually or as needed to adapt to changes in organizational policies or regulations. 
 
 ## 6. Naming Policy
 
