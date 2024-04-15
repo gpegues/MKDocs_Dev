@@ -26,9 +26,9 @@ RCIT will regularly review the use of Microsoft Bookings to ensure compliance wi
 
 | Component     | Description        | Example          |
 |---------------|--------------------|------------------|
-| Prefix        | Agency Alias       | HWS, TLMA, DPSS  |
-| Suffix        | Bookings           | Bookings         |
-| Full Example  | Combined with a dot separator | HWS.JohnSmith.Bookings |
+| Prefix        | Bookings            | Bookings   |
+| Suffix        | N/A         | N/A         |
+| Full Example  | Combined with a dot separator | Bookings.JohnSmith |
 
 ## 7. Policy Enforcement
 Enforcement will be performed through M365 tenant policy. 
