@@ -21,6 +21,7 @@ Below is a list of the current Azure Licensing Groups and their descriptions.
 |License_M365_Stream_DPSS|148597ab-ef2a-48d7-a583-6d7979ad6506|DPSS Users in this group will be assigned the STREAM_O365_E3_GOV service plan from a M365 License|
 |License_M365_Stream_RCIT_UST|d463e0c3-e14a-4f9f-937a-5feab00623cf||
 |License_PowerApps_Premium|1e896204-4339-4a34-b248-4a40baa62554|Users in this group will be assigned a PowerApps Premium license|
+|License_PowerAutomate_Premium|79978e3f-c226-454f-9951-7ebd80553d08|Licensing group for Power Automate Premium for Government|
 |License_PowerBiPro|6dbb1beb-2bdc-4e5d-973a-3d4a5562dcc5||
 |License_ProjectPlan3|0449a59e-c81a-4ca9-b8e9-583e84c0d164|Members of this group will be licensed for "Project Plan 3 for GCC"|
 |License_TeamsPremium|06e80aea-9949-4197-a375-b765e49ccfde|Group for Teams Premium license assignment|
