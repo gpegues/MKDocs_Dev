@@ -93,8 +93,8 @@ nav:
       - Unblock Users: Teams/Troubleshooting/UnblockUser.md
   - Web Server Support:
     - General Information: WebServerSupport.md
+    - FTP: WebServerSupport/FTP/FTP.md
     - Servers:
-      - FTP: WebServerSupport/FTP.md
       - IIS: 
         - RIVCO:
           - RCIT-16WEB01: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01.md
