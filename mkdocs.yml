@@ -98,6 +98,7 @@ nav:
       - IIS: 
         - RIVCO:
           - RCIT-16WEB01: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01.md
+          - RCIT-16WEB01T: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01T.md
         - TZONE:
           - TZVM101: WebServerSupport/IIS/TZONE/TZVM101.md
           - TZVM102: WebServerSupport/IIS/TZONE/TZVM102.md
