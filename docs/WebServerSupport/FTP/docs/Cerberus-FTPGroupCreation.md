@@ -12,12 +12,12 @@ Before configuring Cerberus FTP Server, ensure that you have an **Active Directo
       - Note: You do not need to set permissions right now, this is done later by Cerberus.
 
 ### **1. Create an Active Directory (AD) Group**
-> **If an existing AD group is being used, skip to Step 2. Otherwise, create a new group using the naming convention "FTP_Cerberus_Dept_Purpose" (e.g., FTP_Cerberus_RCIT_TestGroup) and record the associated TASK number in the Notes field for tracking.**
+> **If an existing AD group is being used, skip to Step 2. Otherwise, create a new group using the naming convention "FTP-Cerberus_Dept_Purpose" (e.g., FTP-Cerberus_RCIT_TestGroup) and record the associated TASK number in the Notes field for tracking.**
 
 1. Open **Active Directory Users and Computers (ADUC)**.
 2. Navigate to the **Departments** OU, choose the appropriate department, and then access the **Groups** OU.
 3. Right-click and select **New > Group**.
-4. Enter a **Group Name** (e.g., `FTP_Cerberus_RCIT_TestGroup`).
+4. Enter a **Group Name** (e.g., `FTP-Cerberus_RCIT_TestGroup`).
 5. Choose **Group Type: Security** and **Group Scope: Global**.
 6. Click **OK** to create the group.
 7. Add any necessary users to this **AD group**.
@@ -37,7 +37,7 @@ Before configuring Cerberus FTP Server, ensure that you have an **Active Directo
 2. **Create a New Group**
    - In the **User Manager**, go to the **Groups** tab.
    - Click **New** to create a new group.
-   - Enter a **Group Name** in the "**Group Basics**" window (e.g., `FTP_Cerberus_RCIT_TestGroup`).
+   - Enter a **Group Name** in the "**Group Basics**" window (e.g., `FTP-Cerberus_RCIT_TestGroup`).
      - **Important:** Whenever possible, ensure the group name matches exactly with its AD counterpart. While this may not always be feasible, it should be the standard practice for group creation.
    - Enter the **Folder Path** (or navigate to the folder in the GUI). Cerberus will map this group to the filepath.
    - Under "**File Permissions**", "**Folder Permissions**", and "**General Permissions**", configure access levels as desired:
