@@ -61,7 +61,10 @@ nav:
       - Message Trace: Exchange/MessageTrace.md
       - SMTP to SharedMailbox: Exchange/scan2email.md
     - Misc.:
+      - 3rd Party:
+        - TangoReserve: Exchange/3rdParty/TangoReserve/TRSetupChecklist.md
       - Help Desk Support: Exchange/Help Desk Support for Outlook.md
+      - Next Request - PRAs: Exchange/NextRequest-PublicRecordsRequests.md
       - Role Clarification: Exchange/Role Clarification for M365 Services and Help Desk.md
     - Server:
       - Edge Subscription: Exchange/Server 2016/Create New Edge Subscription.md
@@ -75,6 +78,7 @@ nav:
   - M365: 
     - General Information: M365.md
     - Bots: M365/Framework-BotApproval-M365.md
+    - Bookings: M365/Bookings/BookingsGovernance.md
     - Licensing: 
       - General Information: M365/Licensing.md
       - Licensing Groups: M365/LicenseGroups.md 
