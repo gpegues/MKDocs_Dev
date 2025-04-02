@@ -1,3 +1,4 @@
+# send events to teams
 name: MS Teams Notification
 on: [push, pull_request]
 
