@@ -75,6 +75,8 @@ nav:
       - Distribution Group Types: Exchange/UserDocumentation/M365-ExchangeOnline Distribution Group Types.md
       - ServiceNow Request Guidelines: Exchange/UserDocumentation/M365-ExchangeOnline ServiceNow Request Submission Guidelines for Microsoft 365 Exchange Online Resource Access.md
       - Updating Auto-Reply: Exchange/UserDocumentation/M365-ExchangeOnline Autoreply for Shared Mailboxes.md
+  - GitHub:
+    - Onboarding: GitHub/Onboarding.md
   - M365: 
     - General Information: M365.md
     - Bots: M365/Framework-BotApproval-M365.md
