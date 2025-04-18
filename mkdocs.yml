@@ -86,6 +86,7 @@ nav:
       - Licensing Groups: M365/LicenseGroups.md 
     - Misc:
       - Calendar Options: M365/CalendarOptionsinM365.md
+    - Power BI: M365/PowerBI/PublishtoWebGuidelines.md
   - Misc:
     - Syncs: Misc/Syncs.md
   - Sharepoint: Sharepoint.md
