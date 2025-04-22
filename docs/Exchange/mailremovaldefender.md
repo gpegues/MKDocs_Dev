@@ -33,7 +33,9 @@ To provide a step-by-step procedure for identifying and removing malicious, comp
 
 > **Tip**: Use **Threat View** to pivot into other recipients or related message activity.
 > 
-> **Note**: Explorer filtering is limited and does not support multi-condition queries (e.g., `Sender AND Subject AND Date`). For advanced scenarios, use **Advanced Hunting**.
+> **Note**: Explorer filtering is limited and does not support multi-condition queries (e.g., `Sender AND Subject AND Date`).
+>
+> For more complex scenarios, we should look into using **Advanced Hunting** [Microsoft Defender XDR Advanced hunting API](https://learn.microsoft.com/en-us/defender-xdr/api-advanced-hunting). 
 
 ---
 
