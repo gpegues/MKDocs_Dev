@@ -4,61 +4,49 @@
 To provide a step-by-step procedure for identifying and removing malicious, compromised, or otherwise critical emails across Microsoft 365 tenant mailboxes using Microsoft Defender for Office 365.
 
 ---
-
 ## Prerequisites
 
 - Security Administrator or Global Administrator role
-- Access to Microsoft 365 Defender ATP Portal: [https://security.microsoft.com](https://security.microsoft.com)
+- Access to Microsoft 365 Defender Portal: [https://security.microsoft.com](https://security.microsoft.com)
 
 ---
 
-## Step 1: Identify the Malicious Email
+## Step 1: Identify and Remediate Malicious Email
 
-1. Navigate to **Microsoft 365 Defender Portal**.
-2. Go to:  
-   **Email & Collaboration** > **Explorer** (or **Real-time Detections**).
-3. Use filters to locate the email:
+1. Navigate to the **Microsoft 365 Defender Portal**.
+2. Go to **Email & Collaboration** > **Explorer** (or **Real-time Detections**).
+3. Use filters to locate the email, such as:
+   
    - **Sender address**
    - **Subject keywords**
    - **Date/time**
-4. Review message details:
-   - Preview content, links, and headers
-   - Confirm it's a malicious or unauthorized message
+  
+4. Under the **Email** tab, review and select any messages requiring action.
+5. Click **Message actions** and choose the appropriate remediation (e.g., **Soft delete**, **Hard delete**).
+   
+   - This triggers the creation of a **remediation event**, which can be monitored in **Email & Collaboration** > **Review**.
+   - The **Review** pane provides:
+   
+     - A summary of actions taken
+     - Completion and success status
+     - Exportable logs showing what was applied, to which messages, and in which mailboxes
 
-> Tip: Use **"Threat View"** to pivot into other recipients or message traces.
-
-> **Explorer is limited** in filter flexibility. You cannot manually input multi-condition queries like `Sender AND Subject AND Date`. For advanced logic, use **Advanced Hunting**.
-
----
-
-## Step 2: Select Messages for Removal
-
-1. In Explorer, **check the box** next to each matching message.
-2. Click **“Take action”** > **Delete message**.
-3. Choose **Hard delete** to permanently remove the email:
-   - This bypasses the Recoverable Items folder
-   - Use only if recovery is not required
-
-> Hard delete is irreversible.
+> **Tip**: Use **Threat View** to pivot into other recipients or related message activity.
+> 
+> **Note**: Explorer filtering is limited and does not support multi-condition queries (e.g., `Sender AND Subject AND Date`). For advanced scenarios, use **Advanced Hunting**.
 
 ---
 
-## Step 3: Monitor and Complete Remediation
+## Step 2: Monitor and Confirm Remediation
 
-1. Go to:  
-   **Email & Collaboration** > **Action Center**
-2. Locate your action under the **Pending** or **Completed** tab.
+1. Go to **Email & Collaboration** > **Action Center**.
+2. Locate your remediation action under the **Pending** or **Completed** tab.
 3. Click the action to view:
-   - Status (Queued, Completed, Failed)
-   - Number of affected messages
-   - Affected user mailboxes
-4. Wait for status to update:
-   - Typically completes in 5–30 minutes
-   - May remain **Queued** if messages were already deleted, read, or moved
+   
+   - Status (e.g., Queued, Completed, Failed)
+   - Number of messages affected
+   - Affected mailboxes
+     
+4. Wait for status to update. Actions typically complete in **5–30 minutes**, but may stay **Queued** longer if messages were already deleted, moved, or read.
 
-5. If the remediation completes or remains Queued with 0 results, click **"Delete Remediation"** to clear it from the portal.
-   - This does **not reverse the action** — it only removes the remediation entry.
-
-6. Use **Unified Audit Logs** or **Message Trace** to confirm message flow and visibility:
-   ```powershell
-   Get-MessageTrace -SenderAddress compromised@yourdomain.com -StartDate (Get-Date).AddDays(-2)
+> You can delete the remediation entry from the Action Center after confirming it is complete — this will not undo the action, only remove it from the dashboard.
