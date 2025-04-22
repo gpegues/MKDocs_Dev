@@ -7,9 +7,8 @@ To provide a step-by-step procedure for identifying and removing malicious, comp
 
 ## Prerequisites
 
-- Microsoft Defender
 - Security Administrator or Global Administrator role
-- Access to Microsoft 365 Defender Portal: [https://security.microsoft.com](https://security.microsoft.com)
+- Access to Microsoft 365 Defender ATP Portal: [https://security.microsoft.com](https://security.microsoft.com)
 
 ---
 
