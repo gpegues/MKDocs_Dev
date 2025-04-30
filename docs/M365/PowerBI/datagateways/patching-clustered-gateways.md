@@ -28,19 +28,20 @@ Official Whitepaper:
 > **Important:** Only process one node at a time.
 
 ### Step 1: Select and Disable the Node
+
 - In the Power BI Service Portal:
   - Navigate to the gateway cluster details.
   - Find the server you plan to patch.
   - **Set the node to "Disabled"**.
     - You will need _**"Tenant Administration"**_ enabled in Power BI Admin Portal to manage these settings.
-- This will gracefully remove it from the load balancer and allow running jobs to complete.
+
+> **Note:** This will gracefully remove it from the load balancer and allow running jobs to complete.
 
 ### Step 2: Wait for Active Jobs to Finish
 - Wait approximately **30 minutes** after disabling the node to ensure active tasks are completed.
-- (Adjust longer if large or critical jobs are running.)
 
 ### Step 3: Apply Windows/PBI Gateway Updates
-- Apply the necessary Windows Server OS patches to the selected server and/or PBI Gateway Update.
+- Apply the necessary Windows Server OS patches and/or PBI Gateway Update to the selected server.
 
 ### Step 4: Reboot the Server
 - Perform a reboot.
@@ -68,7 +69,7 @@ Official Whitepaper:
 2. **Monitor Dataset Refreshes**
    - Check scheduled and manual refresh jobs to ensure no failures. (This section needs to be updated with some information on how we can accomplish this, work in progress)
 3. **Review Gateway Logs (if needed)**
-   - At the the of this writing, logging outside of OS logging is not enabled and is not recommended to be left on outside of troubleshooting. If you need to enable this for any reason, please refer to the following document:
+   - At the the of this writing, logging outside of Windows OS logging is not enabled and is not recommended to be left on outside of troubleshooting. If you need to enable this for any reason, please refer to the following document to enable the internal logging for the product:
      - [Enable Data Gateway Logging](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-performance#slow-performing-queries)
 
 ---
