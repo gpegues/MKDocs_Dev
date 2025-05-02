@@ -70,10 +70,9 @@ This document outlines how **Certify The Web (CTW)** will function in our enviro
   - If registered on [certifytheweb.com](https://certifytheweb.com), summary info for all certificates is available.
 
 ---
+---
 
-## How CTW Works
-
-# How Certify The Web (CTW) Works
+## How Certify The Web (CTW) Works
 
 This guide outlines the certificate automation and deployment process using Certify The Web (CTW).
 
