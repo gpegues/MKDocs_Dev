@@ -1,0 +1,23 @@
+{# Macro to recursively render TOC items #}
+{% macro render_toc_item(item) %}
+    <li class="bo-toc-item">
+        <a href="{{ item.url }}" class="bo-toc-link">{{ item.title }}</a>
+        {% if item.children %}
+            <ul class="bo-toc-list is-child-list">
+                {% for child in item.children %}
+                    {{ render_toc_item(child) }} {# Recursion #}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+{% endmacro %}
+
+{# TOC Container #}
+<div class="bo-toc-main">
+    <h4 class="bo-toc-title">On this page</h4>
+    <ul class="bo-toc-list">
+        {% for item in page.toc %}
+            {{ render_toc_item(item) }}
+        {% endfor %}
+    </ul>
+</div>

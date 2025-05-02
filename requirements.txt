@@ -1,4 +1,14 @@
 mkdocs
-mkdocs-material
 mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin
+
+jinja2
+markdown
+pygments
+pymdown-extensions
+
+babel
+colorama
+paginate
+backrefs
+requests

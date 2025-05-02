@@ -1,0 +1,28 @@
+{# Macro to recursively render navigation items #}
+{% macro render_nav_item(item) %}
+<li class="bo-nav-item {% if item.active %}is-active{% endif %} {% if item.children %}has-children{% endif %}">
+  {% if item.children %}
+    <a href="javascript:void(0);" class="bo-nav-link">
+      {{ item.title }}
+    </a>
+    <ul class="bo-nav-list is-child-list">
+      {% for child in item.children %}
+        {{ render_nav_item(child) }} {# Recursion #}
+      {% endfor %}
+    </ul>
+  {% else %}
+    <a href="{{ item.url | url }}" class="bo-nav-link">
+      {{ item.title }}
+    </a>
+  {% endif %}
+</li>
+{% endmacro %}
+
+{# Main Navigation Container #}
+<nav class="bo-nav-main">
+  <ul class="bo-nav-list">
+    {% for item in nav %}
+      {{ render_nav_item(item) }}
+    {% endfor %}
+  </ul>
+</nav>

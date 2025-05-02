@@ -1,0 +1,26 @@
+{# Structure for the search modal, using default MkDocs IDs #}
+<div class="bo-search-modal" id="search-modal" data-search-modal>
+  <div class="bo-search-modal-container">
+    <div class="bo-search-modal-header">
+      <h3 class="bo-search-modal-title">Search</h3>
+      <button class="bo-search-modal-close" data-search-close>&times;</button>
+    </div>
+    
+    {# Use the exact ID expected by MkDocs default search script #}
+    <input 
+      type="search" 
+      class="bo-search-modal-input" 
+      id="mkdocs-search-query" 
+      placeholder="Type to start searching..." 
+      autocomplete="off" 
+      autocorrect="off" 
+      autocapitalize="off" 
+      spellcheck="false">
+    
+    {# Use the exact ID expected by MkDocs default search script #}
+    <div class="bo-search-results" id="mkdocs-search-results">
+      {# Search results will be injected here dynamically #}
+      <p>Type search query above.</p>
+    </div>
+  </div>
+</div>

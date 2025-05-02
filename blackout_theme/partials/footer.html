@@ -1,0 +1,17 @@
+<footer class="bo-footer">
+  <div class="bo-footer-content">
+    {# Copyright text - left side #}
+    <small>
+      {% if config.copyright %}
+        {{ config.copyright }}
+      {% else %}
+        &copy; Riverside County Information Technology. All Rights Reserved.
+      {% endif %}
+    </small>
+    
+    {# Credits - right side #}
+    <small class="bo-footer-credits">
+      Built with <a href="https://www.mkdocs.org/" target="_blank" rel="noopener">MkDocs</a>
+    </small>
+  </div>
+</footer>

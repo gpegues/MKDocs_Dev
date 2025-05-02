@@ -1,0 +1,43 @@
+<header class="bo-header">
+    <div class="bo-container bo-header-grid">
+
+        {# Sidebar Toggle Button #}
+        <button class="bo-sidebar-toggle" id="bo-sidebar-toggle" aria-label="Toggle Navigation">
+            <span class="bo-icon-menu"></span> {# Style with CSS #}
+        </button>
+
+        {# Site name / Logo #}
+        <div class="bo-header-title">
+            <a href="{{ nav.homepage.url | url }}" title="{{ config.site_name }}">
+                {# Optional: Add logo image here if desired #}
+                {# <img src="{{ 'assets/img/logo.png' | url }}" alt="{{ config.site_name }}"> #}
+                {{ config.site_name }}
+            </a>
+        </div>
+
+        {# Placeholder for top navigation tabs if needed in future #}
+        {# <nav class="bo-header-nav"> </nav> #}
+
+        {# Search Bar Integration #}
+        {% if config.plugins.search %}
+        <div class="bo-header-search">
+            {# This button typically triggers a modal defined in search.html #}
+            <button class="bo-search-toggle" data-search-toggle>
+                <span class="bo-search-icon"></span> {# Style with CSS #}
+                Search
+            </button>
+        </div>
+        {% endif %}
+
+        {# Repository Link #}
+        {% if config.repo_url %}
+        <div class="bo-header-repo">
+            <a href="{{ config.repo_url }}" target="_blank" rel="noopener" title="Repository">
+                {# Add an SVG icon for GitHub/GitLab etc. or use text #}
+                <span class="bo-repo-icon"></span> {# Style with CSS #}
+            </a>
+        </div>
+        {% endif %}
+
+    </div>
+</header>

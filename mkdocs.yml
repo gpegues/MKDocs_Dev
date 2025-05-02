@@ -1,57 +1,50 @@
+# Site Information
 site_name: Managed Services KB
-extra_css:
-  - stylesheets/extra.css
+repo_url: https://github.com/orgs/rivcoit/teams/rcit-tsb-m365/repositories
+copyright: Copyright &copy; 2025 RCIT
+
 theme:
-  name: material
-  icon:
-    repo: fontawesome/brands/github
-  features:
-    - toc.follow
-   # - toc.integrate
-    - navigation.top
-   # - navigation.tabs
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
+  name: null
+  custom_dir: blackout_theme
   language: en
-  palette:
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to Light mode
-      primary: black
-      accent: light blue
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to Dark mode
-      primary: black
-      accent: deep orange
+
+extra_css:
+  - assets/css/main.css
+  - assets/css/custom.css
+extra_javascript:
+  - assets/js/lunr.min.js
+  - assets/js/search-worker.js
+  - assets/js/search.js
+  - assets/js/main.js
+
 markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - admonition
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - admonition    
   - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.superfences
-repo_url: https://github.com/orgs/rivcoit/teams/rcit-tsb-m365/repositories
+
 plugins:
-  - search: # necessary for search to work
+  - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang: en
   - glightbox
   - git-revision-date-localized:
       type: datetime
+
 nav:
   - Managed Services: index.md
   - Enterprise Notifications:
     - Export a Wiki to OneNote: EnterpriseNotifications/Export a wiki to a OneNote notebook in Microsoft Teams.md
     - Wiki Changes: EnterpriseNotifications/Important Update Changes to Note-Taking (Wiki) in Microsoft Teams.md
-  - Exchange: 
+  - Exchange:
     - General Information: Exchange.md
     - eDiscovery:
       - eDiscovery Litigation: Exchange/eDiscoveryLitigation.md
@@ -77,20 +70,20 @@ nav:
       - Updating Auto-Reply: Exchange/UserDocumentation/M365-ExchangeOnline Autoreply for Shared Mailboxes.md
   - GitHub:
     - Onboarding: GitHub/Onboarding.md
-  - M365: 
+  - M365:
     - General Information: M365.md
     - Bots: M365/Framework-BotApproval-M365.md
     - Bookings: M365/Bookings/BookingsGovernance.md
-    - Licensing: 
+    - Licensing:
       - General Information: M365/Licensing.md
-      - Licensing Groups: M365/LicenseGroups.md 
+      - Licensing Groups: M365/LicenseGroups.md
     - Misc:
       - Calendar Options: M365/CalendarOptionsinM365.md
     - Power BI: M365/PowerBI/PublishtoWebGuidelines.md
   - Misc:
     - Syncs: Misc/Syncs.md
-  - Sharepoint: Sharepoint.md
-  - Teams: 
+#  - Sharepoint: Sharepoint.md
+  - Teams:
     - General Information: Teams.md
     - Device Provisioning: Teams/DeviceProvisioning.md
     - Device Management: Teams/DeviceManagement.md
@@ -99,10 +92,14 @@ nav:
     - Troubleshooting:
       - Unblock Users: Teams/Troubleshooting/UnblockUser.md
   - Web Server Support:
-    - General Information: WebServerSupport.md
-    - FTP: WebServerSupport/FTP/FTP.md
+    - General: WebServerSupport.md
+    - FTP: 
+      - GENERAL: WebServerSupport/FTP/general.md
+      - CERBERUS:
+        - Application Update: WebServerSupport/FTP/docs/Cerberus-ApplicationUpdate.md
+        - FTP Group Creation: WebServerSupport/FTP/docs/Cerberus-FTPGroupCreation.md
     - Servers:
-      - IIS: 
+      - IIS:
         - RIVCO:
           - RCIT-16WEB01: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01.md
           - RCIT-16WEB01T: WebServerSupport/IIS/RIVCOCA/RCIT-16WEB01T.md

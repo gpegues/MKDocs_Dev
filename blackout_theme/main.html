@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ config.theme.language | default('en') }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# Set page title #}
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.site_name }}</title>
+
+    {# Favicon Link (adjust path in assets/img/) #}
+    {# <link rel="shortcut icon" href="{{ 'assets/img/favicon.png' | url }}"> #}
+
+    {# Load CSS specified in mkdocs.yml #}
+    {% for css_path in config.extra_css %}
+    <link href="{{ css_path | url }}" rel="stylesheet">
+    {% endfor %}
+
+    {# REMOVED: MkDocs hook for plugin assets - Not available in fully custom themes #}
+    {# {{- SCRIPT() }} #}
+    {# {{- BODY() }} #}
+
+</head>
+<body class="theme-blackout"> {# Add a class for theme scoping #}
+
+    {# Include Header #}
+    {% include "partials/header.html" %}
+
+    {# Main Content Wrapper - Using Flexbox for layout #}
+    <div class="bo-container">
+        <div class="bo-main-grid">
+
+            {# Left Sidebar: Navigation #}
+            <aside class="bo-sidebar bo-sidebar-left">
+                {% include "partials/nav.html" %}
+            </aside>
+
+            {# Main Content Area #}
+            <main class="bo-content">
+                <article>
+                    {% block content %}
+                        {{ page.content }}
+                    {% endblock %}
+                </article>
+            </main>
+
+            {# Right Sidebar: Table of Contents #}
+            {# Only show TOC if page has one and screen is wide enough (handled by CSS) #}
+            {% if page.toc %}
+            <aside class="bo-sidebar bo-sidebar-right">
+                {% include "partials/toc.html" %}
+            </aside>
+            {% endif %}
+
+        </div> {# End bo-main-grid #}
+    </div> {# End bo-container #}
+
+    {# Include Footer #}
+    {% include "partials/footer.html" %}
+
+    {# Load JavaScript specified in mkdocs.yml #}
+    {% for js_path in config.extra_javascript %}
+    <script src="{{ js_path | url }}"></script>
+    {% endfor %}
+
+    {# Include search modal/scripts if using the search plugin #}
+    {% if config.plugins.search %}
+        {# Create partials/search.html based on plugin needs #}
+        {% include "partials/search.html" ignore missing %}
+    {% endif %}
+
+</body>
+</html>
