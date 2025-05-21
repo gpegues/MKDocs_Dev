@@ -79,7 +79,11 @@ nav:
       - Licensing Groups: M365/LicenseGroups.md
     - Misc:
       - Calendar Options: M365/CalendarOptionsinM365.md
-    - Power BI: M365/PowerBI/PublishtoWebGuidelines.md
+    - Power BI: 
+      - Publish to Web: M365/PowerBI/PublishtoWebGuidelines.md
+      - Data Gateway Cluster Server Management:  
+        - Updating the Data Gateway Cluster: M365/PowerBI/datagateways/patching-clustered-gateways.md
+        - Additional Applications: M365/PowerBI/datagateways/gateway-additional-applications.md
   - Misc:
     - Syncs: Misc/Syncs.md
 #  - Sharepoint: Sharepoint.md
