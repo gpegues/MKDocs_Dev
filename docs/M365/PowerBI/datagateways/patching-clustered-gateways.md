@@ -1,6 +1,7 @@
 ## Patching and Rebooting Clustered Power BI Gateway Servers
 
 ### Purpose
+
 Ensure Windows OS updates and reboots are applied safely to servers running clustered Power BI Gateways without disrupting Power BI service availability.
 
 Official Whitepaper:
@@ -46,10 +47,13 @@ Official Whitepaper:
 ### Step 3: Apply Windows/PBI Gateway Updates
 - Apply the necessary Windows Server OS patches and/or PBI Gateway Update to the selected server.
 
-### Step 4: Reboot the Server
+### Step 4: Perform required updates to other applications as necessary
+- Some gateway connectors rely on seperate applications to function. Current information regarding these applications may be found [here.](gateway-additional-applications.md) 
+  
+### Step 5: Reboot the Server
 - Perform a reboot.
 
-### Step 5: Verify Node Reconnection
+### Step 6: Verify Node Reconnection
 
 - After reboot, sign back into the Power BI Service Portal.
 - Confirm:
@@ -58,11 +62,11 @@ Official Whitepaper:
 
 > **Note:** This step is separated from re-enabling the node to ensure the server has fully restarted, the gateway service is healthy, and no issues are present before returning it to load-balanced traffic. This helps prevent service disruptions from unstable or misconfigured nodes.
 
-### Step 6: Re-Enable the Node
+### Step 7: Re-Enable the Node
 - After confirming the node is online and stable, **set the node back to "Enabled"** in the cluster settings.
 - This returns it to the active load balancer pool.
 
-### Step 7: Repeat for Remaining Nodes
+### Step 8: Repeat for Remaining Nodes
 - Move to the next node and repeat Steps 1–6 until all nodes are updated and rebooted.
 
 ---
