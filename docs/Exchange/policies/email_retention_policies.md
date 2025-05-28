@@ -19,12 +19,15 @@ Email retention policies dictate how long emails are stored and what actions are
 | Inbox - Never Delete              | Inbox               | Unlimited        | Delete           | A-50             |                    |
 | Journal - Never Delete            | Journal             | Unlimited        | Delete           | A-50             |                    |
 | Junk Email - Never Delete         | Junk Email          | Unlimited        | Delete           | A-50             |                    |
-| Never Delete                      | Personal            | Unlimited        | Delete           |                  |                    |
+| Never Delete                      | Personal            | Unlimited        | Delete           | Not specified    |                    |
 | Notes - Never Delete              | Notes               | Unlimited        | Delete           | A-50             |                    |
 | Outbox - Never Delete             | Outbox              | Unlimited        | Delete           | A-50             |                    |
-| Personal - Never Delete           | Personal            | Unlimited        | Delete           |                  |                    |
+| Personal - Never Delete           | Personal            | Unlimited        | Delete           | Not specified    |                    |
 | Sent Items - Never Delete         | Sent Items          | Unlimited        | Delete           | A-50             |                    |
 | Skype Conversation History - Daily Removal | Conversation History | 1 day            | Delete           | A-50             |                    |
+
+## Default Behavior
+If a retention policy is not applied to a certain category, the emails or items in that category will not be subject to any specific retention actions. This means that they will remain in their respective folders indefinitely until manually deleted by the user or until a general policy or action is applied to them.
 
 ## Detailed Policies
 ### 1 Month Delete
