@@ -48,7 +48,7 @@ nav:
     - General Information: Exchange.md
     - eDiscovery:
       - eDiscovery Litigation: Exchange/eDiscoveryLitigation.md
-      - Email Removal Requests: Exchange/mailremoval.md
+      - Email Removal Requests: Exchange/mailremovaldefender.md
     - Mailboxes:
       - Creating User Email: Exchange/RemoteEnableUser.md
       - Message Trace: Exchange/MessageTrace.md
@@ -69,6 +69,8 @@ nav:
       - ServiceNow Request Guidelines: Exchange/UserDocumentation/M365-ExchangeOnline ServiceNow Request Submission Guidelines for Microsoft 365 Exchange Online Resource Access.md
       - Updating Auto-Reply: Exchange/UserDocumentation/M365-ExchangeOnline Autoreply for Shared Mailboxes.md
   - GitHub:
+    - Actions:
+      - Automations: GitHub/ActionsAutomations.md
     - Onboarding: GitHub/Onboarding.md
   - M365:
     - General Information: M365.md

@@ -6,4 +6,4 @@ This site serves as the central repository for documentation, guides, and best p
 
 ## Quick Links
 
-[Group Projects on Planner](https://tasks.office.com/rivco.org/en-US/Home/Planner#/plantaskboard?groupId=c6263045-0417-4356-8fbb-3d87f43e66ae&planId=cvaHoSYzzkicSh5i5XYn8IIAAukb)
+[Group Projects on Planner](https://planner.cloud.microsoft/webui/plan/MLTs_vX2UUu-O99fRPKmi4IAHrSU/view/board?tid=d7f03410-e0a8-4159-b300-54980ef605d0)
