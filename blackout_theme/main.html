@@ -20,6 +20,14 @@
     {# {{- SCRIPT() }} #}
     {# {{- BODY() }} #}
 
+    {# Define base_url for JavaScript - Jinja2 template will be rendered server-side #}
+    <script type="text/javascript">
+        /* eslint-disable */
+        // prettier-ignore
+        var base_url = {{ base_url | tojson }};
+        /* eslint-enable */
+    </script>
+
 </head>
 <body class="theme-blackout"> {# Add a class for theme scoping #}
 
@@ -37,11 +45,58 @@
 
             {# Main Content Area #}
             <main class="bo-content">
-                <article>
+                {# Page Metadata - Top #}
+                {% if page and page.meta %}
+                <div class="bo-page-meta-top">
+                    {# Breadcrumbs #}
+                    {% if page and page.ancestors %}
+                    <nav class="bo-breadcrumbs" aria-label="Breadcrumb">
+                        <a href="{{ nav.homepage.url | url }}">Home</a>
+                        {% for ancestor in page.ancestors %}
+                            <span class="bo-breadcrumb-separator">/</span>
+                            <a href="{{ ancestor.url | url }}">{{ ancestor.title }}</a>
+                        {% endfor %}
+                        <span class="bo-breadcrumb-separator">/</span>
+                        <span class="bo-breadcrumb-current">{{ page.title }}</span>
+                    </nav>
+                    {% endif %}
+                </div>
+                {% endif %}
+                
+                <article class="bo-article">
                     {% block content %}
                         {{ page.content }}
                     {% endblock %}
                 </article>
+                
+                {# Page Metadata - Bottom #}
+                {% if page %}
+                <div class="bo-page-meta-bottom">
+                    <div class="bo-page-meta-info">
+                        {# Last Updated Date from git-revision-date-localized plugin #}
+                        {% if page.meta.git_revision_date_localized %}
+                        <div class="bo-meta-item">
+                            <svg class="bo-meta-icon" viewBox="0 0 16 16" width="14" height="14">
+                                <path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"></path>
+                            </svg>
+                            <span>Last updated: <time datetime="{{ page.meta.git_revision_date_localized }}">{{ page.meta.git_revision_date_localized }}</time></span>
+                        </div>
+                        {% endif %}
+                        
+                        {# Edit this page link #}
+                        {% if page and page.edit_url %}
+                        <div class="bo-meta-item">
+                            <a href="{{ page.edit_url }}" target="_blank" rel="noopener" class="bo-edit-link">
+                                <svg class="bo-meta-icon" viewBox="0 0 16 16" width="14" height="14">
+                                    <path fill="currentColor" d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
+                                </svg>
+                                Edit this page
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
             </main>
 
             {# Right Sidebar: Table of Contents #}

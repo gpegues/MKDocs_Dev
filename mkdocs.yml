@@ -1,6 +1,8 @@
 # Site Information
 site_name: Managed Services KB
-repo_url: https://github.com/orgs/rivcoit/teams/rcit-tsb-m365/repositories
+repo_url: https://github.com/rivcoit/MKDocs
+repo_name: rivcoit/MKDocs
+edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2025 RCIT
 
 theme:
@@ -11,10 +13,12 @@ theme:
 extra_css:
   - assets/css/main.css
   - assets/css/custom.css
+  - assets/css/print.css
 extra_javascript:
   - assets/js/lunr.min.js
   - assets/js/search-worker.js
   - assets/js/search.js
+  - assets/js/enhancements.js
   - assets/js/main.js
 
 markdown_extensions:
