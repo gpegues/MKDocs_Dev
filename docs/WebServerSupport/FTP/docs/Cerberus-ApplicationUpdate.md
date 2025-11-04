@@ -51,11 +51,14 @@ Cerberus FTP Server includes a built-in automatic updater that streamlines the u
     - If **no update is available**, the **Update** button will be disabled. Click **Close** to exit.
     - If an update **is available**, the **Update** button will be enabled and release notes will be shown.
 5. Click **Update** to begin the upgrade.
-6. The Cerberus UI will close, and the installer will automatically launch.
+6. The Cerberus UI will close, and the installer will automatically launch (sometimes it can take a good 30 seconds or so before the update UI opens).
 7. Choose default options during installation. The installer will:
     - Remove the old version
     - Preserve all users and configuration settings
-8. After installation, Cerberus FTP Server will be running the latest version.
+8. One of two things may occur:
+    - It will auto-close respective processes, update accordingly and finish without letting you know that it's complete. You can check task manager for the Cerberus process and verify the version there.
+    - You may get an error about files/processes still in use.  Continue the installation when prompted and be sure to restart when complete.
+9. After installation, Cerberus FTP Server will be running the latest version.
 
 > **Note**: The updater connects to `www.cerberusftpserver.com` over **HTTPS (port 443)**.
 
