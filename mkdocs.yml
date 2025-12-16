@@ -120,3 +120,6 @@ nav:
           - TZVM104: WebServerSupport/IIS/TZONE/TZVM104.md
           - TZVM105: WebServerSupport/IIS/TZONE/TZVM105.md
           - TZVM106: WebServerSupport/IIS/TZONE/TZVM106.md
+    - Certify The Web:
+      - Process Outline: WebServerSupport/certifytheweb/CertifyTheWeb.md
+      - Deployment Guide: WebServerSupport/certifytheweb/README.md

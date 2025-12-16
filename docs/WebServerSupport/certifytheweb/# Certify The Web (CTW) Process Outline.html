@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title># Certify The Web (CTW) Process Outline.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="certify-the-web-ctw-process-outline">Certify The Web (CTW) Process Outline</h1>
+<h2 id="overview">Overview</h2>
+<p>This document outlines how <strong>Certify The Web (CTW)</strong> can function in our environment.</p>
+<hr>
+<h2 id="steps-to-follow">Steps to Follow</h2>
+<h3 id="1-license-request">1. License Request</h3>
+<ul>
+<li><strong>Action:</strong> Server admin creates a request for the license.</li>
+<li><strong>Note:</strong>
+<ul>
+<li>CTW can be installed on any server (internal or in the tzone) needing to download SSL certificates.</li>
+<li>Requirement: The DNS Zone must be hosted by <strong>NS1 and NS2.Riverside.ca.us</strong>.</li>
+<li>Check DNS zone eligibility <a href="https://abongo.com/">Abongo</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-software-installation">2. Software Installation</h3>
+<ul>
+<li><strong>Action:</strong> After submitting the SNOW request, the server admin installs and updates the CTW software.</li>
+<li><strong>Next Step:</strong>
+<ul>
+<li>Remote access to the server to add license information.</li>
+<li>Create the connection string for Infoblox.</li>
+</ul>
+</li>
+<li><strong>Requirement:</strong> <strong>NS1.riverside.ca.us and NS2.riverside.ca.us</strong> must be authoritative for the required DNS zone.</li>
+</ul>
+<hr>
+<h3 id="3-licensing-and-credentials">3. Licensing and Credentials</h3>
+<ul>
+<li><strong>Action:</strong> Once licensed and credentials are entered, the server admin can create certificates.</li>
+<li><strong>Credential Information:</strong>
+<ul>
+<li><code>BServer</code>: ns2mgmt.riverside.ca.us</li>
+<li><code>IBView</code>: External-NS1andNS2</li>
+<li><code>IBCred</code>:
+<ul>
+<li>Username: svc_acme</li>
+<li>Password: Stored in 1Password Team Vault (This is under &quot;Infoblox&quot;)</li>
+</ul>
+</li>
+<li><code>IBIgnoreCert</code>: <code>$true</code> (used due to a self-signed certificate on Infoblox)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="4-notification-to-system-administrator">4. Notification to System Administrator</h3>
+<ul>
+<li><strong>Action:</strong> System Administrator receives email alerts for expiring certificates.</li>
+<li><strong>Email Content:</strong>
+<ul>
+<li>Informs that RCIT has purchased a product to handle automated certificate renewal.</li>
+<li>Configured for DNS validation.</li>
+<li>Automatically renews and installs certificates every 3 months.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-using-certify-the-web">5. Using Certify The Web</h3>
+<ul>
+<li><strong>Product:</strong> Certify The Web - ACME for Windows (Let's Encrypt and other ACME CAs)</li>
+<li><strong>Alternative:</strong> Sectigo is the primary method.<br>
+CTW is optional for admins seeking automation.</li>
+</ul>
+<hr>
+<h3 id="6-license-information">6. License Information</h3>
+<ul>
+<li><strong>License Key:</strong> Certify Certificate Manager Enterprise (100 Servers, 12-Months)</li>
+<li><strong>Dashboard:</strong> <a href="https://certifytheweb.com/profile">Certify the Web Dashboard URL</a></li>
+<li><strong>Email:</strong> rcit-webadmin@rivco.org</li>
+<li><strong>Password:</strong> Located in 1Password Team Vault</li>
+<li><strong>License Key:</strong> 11BB02CA-5A4A-4009-9D76-BD8118BDBAAC</li>
+<li><strong>Expiration:</strong> 2026-02-14</li>
+<li><strong>Activation:</strong> Enter the license key under the <em>About</em> tab. No additional steps needed for renewals.</li>
+</ul>
+<hr>
+<h3 id="7-managed-certificate-notifications">7. Managed Certificate Notifications</h3>
+<ul>
+<li><strong>Action:</strong>
+<ul>
+<li>Use the Certify The Web app on your server for detailed information.</li>
+<li>If registered on <a href="https://certifytheweb.com">certifytheweb.com</a>, summary info for all certificates is available.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h2 id="how-certify-the-web-ctw-works">How Certify The Web (CTW) Works</h2>
+<p>This guide outlines the certificate automation and deployment process using Certify The Web (CTW).</p>
+<hr>
+<h2 id="1-start">1. Start</h2>
+<ul>
+<li><strong>Trigger</strong>: Need to renew or create an SSL certificate.</li>
+</ul>
+<hr>
+<h2 id="2-check-domain-and-dns-records">2. Check Domain and DNS Records</h2>
+<ul>
+<li><strong>Action</strong>: Verify domain ownership through DNS verification.</li>
+<li><strong>Decision</strong>:
+<ul>
+<li><strong>Yes</strong>: Domain ownership verified.</li>
+<li><strong>No</strong>: DNS records need to be updated.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-create-or-renew-certificate">3. Create or Renew Certificate</h2>
+<ul>
+<li><strong>Action</strong>: Initiate the certificate creation or renewal process in CTW.</li>
+</ul>
+<hr>
+<h2 id="4-select-certificate-type">4. Select Certificate Type</h2>
+<ul>
+<li><strong>Options</strong>:
+<ul>
+<li><strong>Standard SSL</strong>: Simple domain-validated certificate.</li>
+<li><strong>Wildcard SSL</strong>: Covers all subdomains.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="5-configure-certify-the-web">5. Configure Certify The Web</h2>
+<ul>
+<li><strong>Steps</strong>:
+<ul>
+<li>Enter domain names.</li>
+<li>Select validation method (DNS, HTTP, etc.).</li>
+<li>Choose the Certificate Authority (e.g., Let's Encrypt).</li>
+<li>Set up auto-renewal options.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-dns-verification-if-applicable">6. DNS Verification (If Applicable)</h2>
+<ul>
+<li><strong>Action</strong>: CTW updates DNS TXT records (via automation or manual update).</li>
+<li><strong>Decision</strong>:
+<ul>
+<li><strong>Success</strong>: Proceed to the next step.</li>
+<li><strong>Failure</strong>: Retry or perform manual intervention.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="7-generate-certificate">7. Generate Certificate</h2>
+<ul>
+<li><strong>Action</strong>: CTW generates the SSL certificate upon successful validation.</li>
+</ul>
+<hr>
+<h2 id="8-post-request-tasks">8. Post-Request Tasks</h2>
+<ul>
+<li><strong>Action</strong>: Set up post-request tasks to distribute and install the certificate.</li>
+<li><strong>Options</strong>:
+<ul>
+<li><strong>Script Execution</strong>: Run PowerShell scripts for distribution.</li>
+<li><strong>Automated Task</strong>: Use CTW tasks for installing on IIS or other services.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="9-deploy-certificate">9. Deploy Certificate</h2>
+<ul>
+<li><strong>Action</strong>: Deploy the certificate to required services (e.g., IIS, load balancer).</li>
+</ul>
+<hr>
+<h2 id="10-verify-ssl-installation">10. Verify SSL Installation</h2>
+<ul>
+<li><strong>Action</strong>: Confirm the certificate is correctly installed and active.</li>
+<li><strong>Decision</strong>:
+<ul>
+<li><strong>Success</strong>: Certificate is active.</li>
+<li><strong>Failure</strong>: Troubleshoot installation issues.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="11-set-up-monitoring-and-alerts">11. Set Up Monitoring and Alerts</h2>
+<ul>
+<li><strong>Action</strong>: Configure monitoring and alerts for certificate validity and renewal.</li>
+</ul>
+<hr>
+<h2 id="12-end">12. End</h2>
+<ul>
+<li><strong>Result</strong>: SSL certificate is successfully automated and deployed.</li>
+</ul>
+<hr>
+<h2 id="visual-workflow---how-ctw-works">Visual Workflow - How CTW Works</h2>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart TD
+    A[Start] --> B[Check Domain and DNS Records]
+    B -->|Verified| C[Create or Renew Certificate]
+    B -->|Not Verified| B1[Update DNS Records] --> B[Check Domain and DNS Records]
+    C --> D[Select Certificate Type]
+    D --> E[Configure Certify The Web]
+    E --> F[DNS Verification]
+    F -->|Success| G[Generate Certificate]
+    F -->|Failure| F1[Retry or Manual Intervention] --> F
+    G --> H[Post-Request Tasks]
+    H --> H1[Script Execution]
+    H --> H2[Automated Task]
+    H --> I[Deploy Certificate]
+    I --> J[Verify SSL Installation]
+    J -->|Success| K[Set Up Monitoring and Alerts]
+    J -->|Failure| J1[Troubleshoot] --> I
+    K --> L[End]
+</div></code></pre>
+
+</body>
+</html>

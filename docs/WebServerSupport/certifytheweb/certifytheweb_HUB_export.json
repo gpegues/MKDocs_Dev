@@ -1,0 +1,208 @@
+{
+  "FormatVersion": 1,
+  "SystemVersion": {
+    "Major": 7,
+    "Minor": 0,
+    "Build": 14
+  },
+  "Description": "Certify The Web - Exported App Settings",
+  "SourceName": "ITDGXW33B3",
+  "ExportDate": "2025-12-03T18:27:14.8298709-08:00",
+  "Content": {
+    "ManagedCertificates": [
+      {
+        "UseStagingMode": false,
+        "IncludeInAutoRenew": true,
+        "DomainOptions": [
+          {
+            "Domain": "*.rivco.org",
+            "IsPrimaryDomain": true,
+            "IsSelected": true,
+            "IsManualEntry": true,
+            "Title": "",
+            "Type": "dns"
+          },
+          {
+            "Domain": "rivco.org",
+            "IsPrimaryDomain": false,
+            "IsSelected": true,
+            "IsManualEntry": true,
+            "Title": "",
+            "Type": "dns"
+          }
+        ],
+        "RequestConfig": {
+          "PrimaryDomain": "*.rivco.org",
+          "SubjectAlternativeNames": [
+            "*.rivco.org",
+            "rivco.org"
+          ],
+          "SubjectIPAddresses": [],
+          "PerformChallengeFileCopy": true,
+          "PerformExtensionlessConfigChecks": true,
+          "PerformTlsSniBindingConfigChecks": true,
+          "PerformAutoConfig": true,
+          "PerformAutomatedCertBinding": true,
+          "AlwaysRecreateBindings": false,
+          "EnableFailureNotifications": true,
+          "IncludeCN": false,
+          "ChallengeType": "http-01",
+          "WebhookTrigger": "None",
+          "DeploymentSiteOption": 40,
+          "DeploymentBindingOption": 10,
+          "DeploymentBindingMatchHostname": true,
+          "DeploymentBindingBlankHostname": false,
+          "DeploymentBindingReplacePrevious": true,
+          "Challenges": [
+            {
+              "ChallengeType": "dns-01",
+              "ChallengeProvider": "DNS01.API.PoshACME.Infoblox",
+              "ChallengeCredentialKey": "d1777415-0c92-4a57-bcfc-610a1db936ce",
+              "Parameters": [
+                {
+                  "Key": "IBServer",
+                  "Name": "Server",
+                  "Description": "e.g. gridmaster.example.com",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": true,
+                  "IsHidden": false,
+                  "Value": "ns2mgmt.riverside.ca.us",
+                  "IsCredential": false
+                },
+                {
+                  "Key": "IBView",
+                  "Name": "DNS View",
+                  "Description": "e.g. default",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": true,
+                  "IsHidden": false,
+                  "Value": "External-NS1andNS2",
+                  "IsCredential": false
+                },
+                {
+                  "Key": "IBIgnoreCert",
+                  "Name": "Skip Cert Validation",
+                  "Description": "",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": false,
+                  "IsHidden": false,
+                  "Value": "true",
+                  "IsCredential": false,
+                  "Type": 3
+                },
+                {
+                  "Key": "propagationdelay",
+                  "Name": "Propagation Delay Seconds",
+                  "Description": "",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": false,
+                  "IsHidden": false,
+                  "Value": "90",
+                  "IsCredential": false
+                }
+              ]
+            }
+          ],
+          "ReusePrivateKey": false,
+          "RequireOcspMustStaple": false
+        },
+        "PostRequestTasks": [
+          {
+            "Id": "393080a5-0185-4bbf-b30b-78e5945c9892",
+            "TaskTypeId": "Certify.Providers.DeploymentTasks.CertificateExport",
+            "TaskName": "Example_Export",
+            "Description": "this is to provide an example of the settings to export a cert to a dir on the workstation. ",
+            "IsFatalOnError": false,
+            "RetriesAllowed": 0,
+            "RetryDelaySeconds": 10,
+            "ChallengeProvider": "Certify.StandardChallenges.Local",
+            "ChallengeCredentialKey": "",
+            "TargetHost": "",
+            "Parameters": [
+              {
+                "Key": "path",
+                "Value": "C:\\temp\\Export\\rivco_wild_card.pfx"
+              },
+              {
+                "Key": "type",
+                "Value": "pfxfull"
+              }
+            ],
+            "LastResult": "Task is enabled but will not run because primary request unsuccessful.",
+            "LastRunStatus": 7,
+            "TaskTrigger": 2,
+            "RunIfLastStepFailed": false
+          }
+        ],
+        "Id": "952c3b48-cadc-4341-8c57-aa3b6ca9eddf",
+        "Version": 6,
+        "GroupId": "",
+        "ServerSiteId": "",
+        "Name": "Cert_example",
+        "ItemType": 1,
+        "DateLastRenewalAttempt": "2025-12-04T02:25:16.582594+00:00",
+        "LastRenewalStatus": 2,
+        "LastAttemptedCA": "letsencrypt.org",
+        "RenewalFailureCount": 4,
+        "RenewalFailureMessage": "Validation of the required challenges did not complete successfully. Submitting the challenge response to the Certificate Authority failed. This may indicate a temporary fault in their system: urn:ietf:params:acme:error:unauthorized Unable to validate JWS :: Account is not valid, has status \"deactivated\"",
+        "CertificateRevoked": false,
+        "CurrentOrderUri": "https://acme-v02.api.letsencrypt.org/acme/order/2849603916/455296774116",
+        "SkipCertificateRequest": false
+      }
+    ],
+    "CertificateFiles": [],
+    "Scripts": [
+      {
+        "Filename": "C:\\temp\\Export\\rivco_wild_card.pfx",
+        "Content": "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",
+        "Scheme": "default"
+      }
+    ],
+    "StoredCredentials": [
+      {
+        "ProviderType": "Certify.StandardChallenges.MgmtHub",
+        "Title": "Management Hub Joining Key",
+        "StorageKey": "_ManagementHubJoiningKey",
+        "DateCreated": "2025-12-04T02:22:33.6452877+00:00",
+        "Secret": "PecvSLyCrhSUFVJYXqJPYGdDqROdiZjZSyNxukVJaBDMk6G8GSJ2KjxV1aMxfXs1hQRW1Wjks+XzMnM52Be9xvVNb0UyeMBlFPPgFMA7w4uI4hcDUPTX+oA618CvggRD",
+        "AllowUnlock": false
+      },
+      {
+        "ProviderType": "DNS01.API.PoshACME.Infoblox",
+        "Title": "info_creds",
+        "StorageKey": "d1777415-0c92-4a57-bcfc-610a1db936ce",
+        "DateCreated": "2025-12-04T02:20:23.2526265+00:00",
+        "Secret": "AkB0I87pH5YTGXLZFJHU9Hn6JZeUv0CRG+5UZQO2logA7JrZt3OkI4Dw37uiWFvXd0ev/uxbez1i32m3WAnhhQ==",
+        "AllowUnlock": false
+      },
+      {
+        "ProviderType": "Certify.StandardChallenges.ACME",
+        "Title": "letsencrypt.org_Production",
+        "StorageKey": "94ba810c-3d24-4ea9-b4ea-e13dcee13912",
+        "DateCreated": "2025-12-04T02:24:46.6024199+00:00",
+        "Secret": "R1IXd2VepgkNxEzB+G2vKoWT7ts9vHyv+226nYr13o+qgrutDfQQz6gRoK8c6c2TO0srcr+AWXm2MUS0cAeyv6HdTLQI51uE44tq7wzIOO1tPSAZvltXcjlKV1dglCfjPkxcYue0IBr7o1vuL7TZNJCZ+Emf52iWdrZSRzse+yiH11zCnT48RntpWwsXvNKWqpd0ur2nHggDp7cDLoXZ1hMf5Nu37RdnkjaLCP0dd0OHVmyC1oQiFDAD0oFuzOlxn4vj/msX1NpAtglzH0WXJDJDPCQgKlM6ilLjvK6Pht0BdLJFVWsGAwaEIPH2NUOpFfB/12Qb+DqotuUL3dhb5Xy9PN39zIZ4jP43JBK5GeYqFWLn3svejAV4t87p77L0mFNQUHRiq15c12cYMw3HYKVDiKVt4G3NlAjDwP9VPK9/jWif+g/62CyOK4QI+DQvB29FRE05kF8J17CVU8hzQgx8nACs3bOQH0wI9odWh5Y6tEgskHCyfnH46NNRvTIx8QlJ/+DmLucpsh7qIstNIbMktdoVRzAkiQ1AAiw9NkNWGRjypWxb2BAYr+QR/OLdVXUNjXiY4dUWgEqBA20EIRsaH8AvrCiM3VhjkkWk7vPQ+b9vfBWzl8zNEmJxep4bUOHf39bI++rE3XOGuaHtaJz0w+B1FSRRB5O4PImhdYkxQ3nSB9wsp9IAVl2G3VK4j0ZVSFI/FLaFdU9sRm4wknBslk0rwBSopn59OVK39xIJHkklp5kp8USmp7GrUabDpRWeSZ6EQPcEJVx6+kQ1N9LL5GIx4iPEnlfOPtsK52z/Ztaj62bJh1z5L2eU2CC2S8xSvD0cU9+iTVrwXH37rtftGYGm0KXYrNsX6KKD5dGI0EiEyhe0XhHqJv4T0rv9P+XviBPF0mbAley6qxyFs+GvWLH9ni2z4xDvIXb98i4PYvOfadCZXTuy7wRAszywSSaQA+XUxOafhZK0K8TY2giopSTrIgVizLceGDxYu9M=",
+        "AllowUnlock": false
+      },
+      {
+        "ProviderType": "Certify.StandardChallenges.Password",
+        "Title": "pfx_pw",
+        "StorageKey": "cc2d6c0e-13f1-4ec2-8a83-129b63d8f1a1",
+        "DateCreated": "2025-12-04T02:20:23.2597835+00:00",
+        "Secret": "I9jtVBW+3Leh4Hbt0rZYjIRDCkdQ1ZVNOkQGrFzma3o=",
+        "AllowUnlock": false
+      }
+    ],
+    "CertificateAuthorities": []
+  },
+  "EncryptionValidation": {
+    "Filename": "",
+    "Content": "am+KOxapQVMgHypmE4PR9A==",
+    "Scheme": "default"
+  },
+  "EncryptionSalt": "f644f017-5068-40dd-8286-a86225ee5683",
+  "Errors": []
+}

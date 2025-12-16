@@ -1,0 +1,213 @@
+{
+  "FormatVersion": 1,
+  "SystemVersion": {
+    "Major": 6,
+    "Minor": 1,
+    "Build": 11
+  },
+  "Description": "Certify The Web - Exported App Settings",
+  "SourceName": "ITDGXW33B3",
+  "ExportDate": "2025-12-03T17:13:15.8666554-08:00",
+  "Content": {
+    "ManagedCertificates": [
+      {
+        "UseStagingMode": false,
+        "IncludeInAutoRenew": true,
+        "DomainOptions": [
+          {
+            "Domain": "*.rivco.org",
+            "IsPrimaryDomain": true,
+            "IsSelected": true,
+            "IsManualEntry": true,
+            "Title": "",
+            "Type": "dns"
+          },
+          {
+            "Domain": "rivco.org",
+            "IsPrimaryDomain": false,
+            "IsSelected": true,
+            "IsManualEntry": true,
+            "Title": "",
+            "Type": "dns"
+          }
+        ],
+        "RequestConfig": {
+          "PrimaryDomain": "*.rivco.org",
+          "SubjectAlternativeNames": [
+            "*.rivco.org",
+            "rivco.org"
+          ],
+          "SubjectIPAddresses": [],
+          "PerformChallengeFileCopy": true,
+          "PerformExtensionlessConfigChecks": true,
+          "PerformTlsSniBindingConfigChecks": true,
+          "PerformAutoConfig": true,
+          "PerformAutomatedCertBinding": true,
+          "AlwaysRecreateBindings": false,
+          "EnableFailureNotifications": true,
+          "ChallengeType": "http-01",
+          "WebhookTrigger": "None",
+          "DeploymentSiteOption": 40,
+          "DeploymentBindingOption": 10,
+          "DeploymentBindingMatchHostname": true,
+          "DeploymentBindingBlankHostname": false,
+          "DeploymentBindingReplacePrevious": true,
+          "Challenges": [
+            {
+              "ChallengeType": "dns-01",
+              "ChallengeProvider": "DNS01.API.PoshACME.Infoblox",
+              "ChallengeCredentialKey": "d1777415-0c92-4a57-bcfc-610a1db936ce",
+              "Parameters": [
+                {
+                  "Key": "IBServer",
+                  "Name": "Server",
+                  "Description": "e.g. gridmaster.example.com",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": true,
+                  "IsHidden": false,
+                  "Value": "ns2mgmt.riverside.ca.us",
+                  "IsCredential": false
+                },
+                {
+                  "Key": "IBView",
+                  "Name": "DNS View",
+                  "Description": "e.g. default",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": true,
+                  "IsHidden": false,
+                  "Value": "External-NS1andNS2",
+                  "IsCredential": false
+                },
+                {
+                  "Key": "IBIgnoreCert",
+                  "Name": "Skip Cert Validation",
+                  "Description": "",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": false,
+                  "IsHidden": false,
+                  "Value": "true",
+                  "IsCredential": false,
+                  "Type": 3
+                },
+                {
+                  "Key": "propagationdelay",
+                  "Name": "Propagation Delay Seconds",
+                  "Description": "",
+                  "IsPassword": false,
+                  "IsMultiLine": false,
+                  "IsRequired": false,
+                  "IsHidden": false,
+                  "Value": "90",
+                  "IsCredential": false
+                }
+              ]
+            }
+          ],
+          "ReusePrivateKey": false,
+          "RequireOcspMustStaple": false
+        },
+        "PostRequestTasks": [
+          {
+            "Id": "393080a5-0185-4bbf-b30b-78e5945c9892",
+            "TaskTypeId": "Certify.Providers.DeploymentTasks.CertificateExport",
+            "TaskName": "Example_Export",
+            "Description": "this is to provide an example of the settings to export a cert to a dir on the workstation. ",
+            "IsFatalOnError": false,
+            "RetriesAllowed": 0,
+            "RetryDelaySeconds": 10,
+            "ChallengeProvider": "Certify.StandardChallenges.Local",
+            "ChallengeCredentialKey": "",
+            "TargetHost": "",
+            "Parameters": [
+              {
+                "Key": "path",
+                "Value": "C:\\temp\\Export\\rivco_wild_card.pfx"
+              },
+              {
+                "Key": "type",
+                "Value": "pfxfull"
+              }
+            ],
+            "DateLastExecuted": "2025-12-03T02:39:43.8928078+00:00",
+            "LastResult": "Failed to copy to destination file. Ensure the target directory exists: C:\\temp\\Export\\rivco_wild_card.pfx: Could not find a part of the path 'C:\\temp\\Export\\rivco_wild_card.pfx'.",
+            "LastRunStatus": 2,
+            "TaskTrigger": 2,
+            "RunIfLastStepFailed": false
+          }
+        ],
+        "Id": "952c3b48-cadc-4341-8c57-aa3b6ca9eddf",
+        "Version": 6,
+        "GroupId": "",
+        "ServerSiteId": "",
+        "Name": "Cert_example",
+        "ItemType": 1,
+        "DateStart": "2025-12-02T17:41:12-08:00",
+        "DateExpiry": "2026-03-02T17:41:11-08:00",
+        "DateRenewed": "2025-12-03T02:39:43.8407989+00:00",
+        "DateLastOcspCheck": "2025-12-03T02:39:43.8407989+00:00",
+        "DateLastRenewalInfoCheck": "2025-12-03T14:45:40.8351247+00:00",
+        "DateNextScheduledRenewalAttempt": "2026-02-01T09:54:16+00:00",
+        "DateLastRenewalAttempt": "2025-12-04T01:10:13.7173222+00:00",
+        "LastRenewalStatus": 3,
+        "LastAttemptedCA": "letsencrypt.org",
+        "RenewalFailureCount": 0,
+        "RenewalFailureMessage": "",
+        "ARICertificateId": "ALUp8i2ObzHom0yteD763OkM0dI.BlOlzR2Ix0crekhuFTLvVSbv",
+        "CertificateCurrentCA": "letsencrypt.org",
+        "CertificatePath": "C:\\ProgramData\\certify\\assets\\_.rivco.org\\20260302_bd5b148a.pfx",
+        "CertificateThumbprintHash": "D4E4F9DA2F81A4ECF2852F226325FE93CF6D4A41",
+        "CertificateRevoked": false,
+        "CurrentOrderUri": "https://acme-v02.api.letsencrypt.org/acme/order/2845641006/454950106306",
+        "SkipCertificateRequest": false
+      }
+    ],
+    "CertificateFiles": [
+      {
+        "Filename": "C:\\ProgramData\\certify\\assets\\_.rivco.org\\20260302_bd5b148a.pfx",
+        "Content": "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",
+        "Scheme": "Default"
+      }
+    ],
+    "Scripts": [
+      {
+        "Filename": "C:\\temp\\Export\\rivco_wild_card.pfx",
+        "Content": "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",
+        "Scheme": "Default"
+      }
+    ],
+    "StoredCredentials": [
+      {
+        "ProviderType": "DNS01.API.PoshACME.Infoblox",
+        "Title": "info_creds",
+        "StorageKey": "d1777415-0c92-4a57-bcfc-610a1db936ce",
+        "DateCreated": "2025-12-04T01:10:13.3616993Z",
+        "Secret": "GI9GiqnGI3uk9CGBYYeUyE+Y2PbZYM6gq9wyyjgco3GV65j78n7Hk/HMzQv088j/t7uXk0ae1whDgHWA4WWUEA=="
+      },
+      {
+        "ProviderType": "Certify.StandardChallenges.ACME",
+        "Title": "letsencrypt.org_Production",
+        "StorageKey": "d242c646-9205-4144-a273-2365406fed48",
+        "DateCreated": "2025-12-04T01:10:13.4148739Z",
+        "Secret": "Yvp5H/cJ0W2REwnG+lKDR2Ns+ZENq8864UXYf7tWBzFuBhDt59+kBzp0vNfLvQcbUuXJGWkPoi6M5yxyEBV+VDjhPnwWg0KyQCIZE/cbYFfqcQFQ985jiHLTjXEHBqwEtcZRKo9LNhz4uUzEYHgjHsclp9c/DMBFrrQIQ1b2oQlj4KcJOuNhE3vfQ1bOAq72PSMDoVksp6SRFyxvmBDCLOeFd8p9+VvxJq5R7/At7hhOoEKOipCOWW2C59MvZVVpBC/wYb2/TCev02Mo2X4lU088xjtgahYshKC8TyUVj9cYfEM5hGl1fb2vzU1v7PgQHcf0JKggJzP+TIQESE9ghlq86M8yrMUqrFA3kgdDQkLooLDyYLgfyU5PP+0SuLmUSG13sXV8Vzb8Pi+XIXtSrCEpJo267OS7tNrqEkRWSnqMWssSc1t/AglhuR6rT9/easQL4FNX3kiwIu2yblP61e9su4didZw8CxKsY3OHgJ74lDcylaj91P9sE1YSLwsnqK98x80sD6Wmjs5JP874x5HjyAskQbH2uYFa+ETb9IIi0qeXw/K+Onk4P6OQDyN4xUGm9fKUTdpqGnccdJoqV8yxt3ioEkGIMqWix9ijI35kuZfjgHnqMPtFfOp0MIKyE2FppzyBAU90wm+/UT55EKTp2To0pZJcU2uIJKbSFJLvaosnKtnzbFdoHezSuYxm1wtoCXzxLdd4QsFd82RrBkl6GSFCLC3gVD12lYIUwU6Qnflu9UkLvu4M9njciYh4YO5QgkFD4uGURzfoj23F4loiX30M/LxDFam1qoqBTsYJb+2kXRKkAy9o1TaR3G7PTRfRZ+WDZpoQQVkZw5p7XKVodk35ApAJVgAr8lIottB2NgY8LbTVb6/CelEkN2B7vjpA2PBiJi7SLjuuF0apXTd5Ygo+4nAgUUymEGHQWieblxS6X6Fo/TkqwvC+h2tYRALi0pRwzzsyH+FJVRQCWvUFcLewwKKs1GVJYgt4LbM="
+      },
+      {
+        "ProviderType": "Certify.StandardChallenges.Password",
+        "Title": "pfx_pw",
+        "StorageKey": "cc2d6c0e-13f1-4ec2-8a83-129b63d8f1a1",
+        "DateCreated": "2025-12-04T01:10:13.4497204Z",
+        "Secret": "BSzG+GGXpXX7qMktJHKmwQxayKerf6KN8ts4/x9Wd3o="
+      }
+    ],
+    "CertificateAuthorities": []
+  },
+  "EncryptionValidation": {
+    "Filename": "",
+    "Content": "4oYAQkVPdvidB/0OqdZpEA==",
+    "Scheme": "Default"
+  },
+  "EncryptionSalt": "87e81ff0-ab52-4517-b7ec-a542b7e4e617",
+  "Errors": []
+}
